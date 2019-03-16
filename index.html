@@ -62,6 +62,75 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-How-to-make-random-number-generator" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/15/How-to-make-random-number-generator/" class="article-date">
+  <time datetime="2019-03-15T08:47:57.000Z" itemprop="datePublished">2019-03-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/15/How-to-make-random-number-generator/">How to make random number generator.</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="랜덤-번호-생성하기"><a href="#랜덤-번호-생성하기" class="headerlink" title="랜덤 번호 생성하기"></a>랜덤 번호 생성하기</h1><p>JavaScript를 이용해 일정범위의 숫자들을 무작위로 뽑아내는 랜덤 번호 생성기 만들기를 배웠다.<br>아직은 JavaScript를 이용하는데에 제대로 이해가 되지않아 여러번 코드를 다시봐야하지만,<br>그래도 하고싶었던 일에 도전한다는 것이 즐겁고 재미있다고 생각한다. 사실 즐겁고 재밌다고<br>생각한다는 것이 아직 내 노력이 부족한것이 아닐까라는 생각이 들어 좀 더 치열하게 공부해야겠다는<br>생각이 든다.</p>
+<p>오늘 배운 코드 정리</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    // 같은 코드를 총 5번 반복하기 위해 for 반복문을 이용
+        for(j=0;j&lt;5;j++) {
+
+    // var 을 이용해 변수를 선언하고 original_numbers의 공간을 빈 공간으로 설정
+        var original_numbers = [];
+
+    // 1부터 45사이의 숫자 범위를 정하기 위해 for 반복문을 이용해서 작성
+    // for 반복분은 초기식이 실행된 후에 다시 한번 조건을 비교할 때 사용
+        for(i=1;i&lt;45;i++) {
+
+    // push 명령을 통해 i 값을 출력
+            original_numbers.push(i);
+        }
+
+
+    var numbers = []; //숫자를 담을 공간
+
+    // for문을 이용한 반복으로 6개의 랜덤한 숫자를 뽑아내고 6개의 랜덤한 숫자가 뽑혔을 경우 종료
+    for(i=0;i&lt;6;i++) {
+        var number_index = Math.floor((Math.random() * original_numbers.length));
+        var get_number = original_numbers[number_index];
+        numbers.push(get_number);
+        original_numbers.splice(number_index,1)
+    }
+
+    //뽑힌 6개의 숫자들을 작은 숫자부터 큰 숫자 순서대로 나열하기
+    numbers.sort(function(a, b) {return a-b});
+    console.log(numbers);
+    }
+&lt;/script&gt;
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://Mark-Yoo.github.io/2019/03/15/How-to-make-random-number-generator/" data-id="cjtbgbgdz0001jys5ybwv1ikq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-To-do-list만들기" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/14/To-do-list만들기/" class="article-date">
@@ -99,7 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/14/To-do-list만들기/" data-id="cjt9j9bsl000041s5ay3hebc3" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/14/To-do-list만들기/" data-id="cjtbgbge10002jys55v5uo3c3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -142,7 +211,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/13/what-have-I-done-to-you-node/" data-id="cjt9j9bt1000341s51pif90sb" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/13/what-have-I-done-to-you-node/" data-id="cjtbgbge30004jys5sfbtau3h" class="article-share-link">Share</a>
       
       
     </footer>
@@ -179,7 +248,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/13/How-to-start-hexo/" data-id="cjt9j9bsy000141s5j5oeugmg" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/13/How-to-start-hexo/" data-id="cjtbgbgdv0000jys57urfsm4m" class="article-share-link">Share</a>
       
       
     </footer>
@@ -224,7 +293,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/13/hello-world/" data-id="cjt9j9bsz000241s5ymog5t5v" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/13/hello-world/" data-id="cjtbgbge20003jys5do131827" class="article-share-link">Share</a>
       
       
     </footer>
@@ -263,6 +332,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/03/15/How-to-make-random-number-generator/">How to make random number generator.</a>
+          </li>
         
           <li>
             <a href="/2019/03/14/To-do-list만들기/">To-do_list만들기</a>
