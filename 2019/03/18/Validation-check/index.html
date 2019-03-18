@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Validation check | Mark-Yoo&#39;s Frontend Life</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="오늘 수업 복습 (3월 18일 월요일)회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기 submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작   // 폼을 사용함으로서 submit 명령을 사용가능하게 함.    $(“#form”).submit(functi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Validation check">
+<meta property="og:url" content="http://Mark-Yoo.github.io/2019/03/18/Validation-check/index.html">
+<meta property="og:site_name" content="Mark-Yoo&#39;s Frontend Life">
+<meta property="og:description" content="오늘 수업 복습 (3월 18일 월요일)회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기 submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작   // 폼을 사용함으로서 submit 명령을 사용가능하게 함.    $(“#form”).submit(functi">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-18T07:39:21.819Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Validation check">
+<meta name="twitter:description" content="오늘 수업 복습 (3월 18일 월요일)회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기 submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작   // 폼을 사용함으로서 submit 명령을 사용가능하게 함.    $(“#form”).submit(functi">
+  
+    <link rel="alternate" href="/atom.xml" title="Mark-Yoo&#39;s Frontend Life" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Mark-Yoo&#39;s Frontend Life</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://Mark-Yoo.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Validation-check" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/18/Validation-check/" class="article-date">
+  <time datetime="2019-03-18T07:23:04.000Z" itemprop="datePublished">2019-03-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Validation check
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="오늘-수업-복습-3월-18일-월요일"><a href="#오늘-수업-복습-3월-18일-월요일" class="headerlink" title="오늘 수업 복습 (3월 18일 월요일)"></a>오늘 수업 복습 (3월 18일 월요일)</h1><p>회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기</p>
+<p>submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작</p>
+<script type="text/javascript">
+
+<p>// 폼을 사용함으로서 submit 명령을 사용가능하게 함.<br>    $(“#form”).submit(function(e) {</p>
+<pre><code>        // 이메일과 비밀번호의 형식을 정하고 맞추기 위한 정규표현식
+            var emailRule = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]( [-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+            var passRule = /^[A-Za-z0-9]{6,12}$/;
+
+        //정규표현식을 통해 잘못된 형식을 걸러내기 전 input란이 비어있을 경우  값 입력을 요구하는 경고
+            if($(&quot;#identification&quot;).val()==&apos;&apos;) {
+                alert(&quot;이메일을 입력해주세요&quot;);
+                return false;
+            }
+        //정규표현식을 통해서 틀린 형식의 이메일을 걸러내고 재입력을 요구하는 경고창
+            if(!emailRule.test($(&quot;#identification&quot;).val())) {
+                alert(&quot;이메일 형식이 틀렸습니다&quot;);
+                return false;
+            }
+        //6~12자리의 패스워드인지 판별하기 전, 빈 값을 채워달라는 경고창
+            if($(&quot;#password&quot;).val==&apos;&apos;) {
+                alert(&quot;패스워드를 입력해주세요&quot;);
+                return false;
+            }
+        //패스워드가 6~12자리인지 검사하고 형식이 틀렸을 경우 다시 돌려보내는 경고창
+            if(!passRule.test($(&quot;#password&quot;).val())) {
+                alert(&quot;패스워드 형식이 틀렸습니다&quot;)
+                return false;
+            }
+            if($(&apos;#name&apos;).val()==&apos;&apos;) {
+                alert(&apos;이름을 입력하세요&apos;);
+                return false;
+            }
+            if($(&apos;#address&apos;).val()==&apos;&apos;) {
+                alert(&apos;주소를 입력하세요&apos;);
+                return false;
+            }
+
+        //e.preventDefault를 통해 전체에 입력된 값이 지워지지 않고 확인을 누르고 난 뒤에도 남아있게 만듦 + 위의 모든 조건을 통과하면 회원가입완료 창이 뜨게 함.
+            e.preventDefault();
+            alert(&quot;회원가입완료&quot;);
+})
+</code></pre></script>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://Mark-Yoo.github.io/2019/03/18/Validation-check/" data-id="cjte1gdd10002kys5cmti6ipi" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/15/How-to-make-random-number-generator/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">How to make random number generator.</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/03/18/Validation-check/">Validation check</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/15/How-to-make-random-number-generator/">How to make random number generator.</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/14/To-do-list만들기/">To-do_list만들기</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/13/what-have-I-done-to-you-node/">what-have-I-done-to-you-node?</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/13/How-to-start-hexo/">How to start hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Mark Yoo<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
