@@ -7,17 +7,17 @@
   
   <title>Validation check | Mark-Yoo&#39;s Frontend Life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="오늘 수업 복습 (3월 18일 월요일)회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기 submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작 &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; // 폼을 사용함으로서 su">
+  <meta name="description" content="오늘 수업 복습 (3월 18일 월요일)회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기 submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작 &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;         // 폼을 사">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Validation check">
 <meta property="og:url" content="http://Mark-Yoo.github.io/2019/03/18/Validation-check/index.html">
 <meta property="og:site_name" content="Mark-Yoo&#39;s Frontend Life">
-<meta property="og:description" content="오늘 수업 복습 (3월 18일 월요일)회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기 submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작 &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; // 폼을 사용함으로서 su">
+<meta property="og:description" content="오늘 수업 복습 (3월 18일 월요일)회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기 submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작 &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;         // 폼을 사">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-18T07:41:45.798Z">
+<meta property="og:updated_time" content="2019-03-18T07:44:00.413Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Validation check">
-<meta name="twitter:description" content="오늘 수업 복습 (3월 18일 월요일)회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기 submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작 &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; // 폼을 사용함으로서 su">
+<meta name="twitter:description" content="오늘 수업 복습 (3월 18일 월요일)회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기 submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작 &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;         // 폼을 사">
   
     <link rel="alternate" href="/atom.xml" title="Mark-Yoo&#39;s Frontend Life" type="application/atom+xml">
   
@@ -89,8 +89,10 @@
         <h1 id="오늘-수업-복습-3월-18일-월요일"><a href="#오늘-수업-복습-3월-18일-월요일" class="headerlink" title="오늘 수업 복습 (3월 18일 월요일)"></a>오늘 수업 복습 (3월 18일 월요일)</h1><p>회원가입 창 형태를 만들고 ‘제출하기 버튼’ 클릭 시 각 input 창에 입력된 정보값의 validation check하기</p>
 <p>submit을 사용하기 위해서 input과 button들을 form에 집어넣고 시작</p>
 <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
-</code></pre><p>// 폼을 사용함으로서 submit 명령을 사용가능하게 함.<br>    $(“#form”).submit(function(e) {</p>
-<pre><code>        // 이메일과 비밀번호의 형식을 정하고 맞추기 위한 정규표현식
+        // 폼을 사용함으로서 submit 명령을 사용가능하게 함.
+        $(&quot;#form&quot;).submit(function(e) {
+
+        // 이메일과 비밀번호의 형식을 정하고 맞추기 위한 정규표현식
             var emailRule = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]( [-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
             var passRule = /^[A-Za-z0-9]{6,12}$/;
 
@@ -132,7 +134,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/18/Validation-check/" data-id="cjte1jem90004lss5l1shkc2j" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/18/Validation-check/" data-id="cjte1mbyr0003mds502qz08o2" class="article-share-link">Share</a>
       
       
     </footer>
