@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Storage basic | Mark-Yoo&#39;s Frontend Life</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="3월 19일 화요일 오늘 배운 것storage basic Web Storage 쿠키의 단점을 보완하기 위해 나온 저장소 Server Session, Client Cookie  localStorage : sessionStorage :  저장할 데이터에 대한 키(key)값 불러올 때는 저장할 때 사용한 키(key) 값을 이용해 불러온다. - getItem  j">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Storage basic">
+<meta property="og:url" content="http://Mark-Yoo.github.io/2019/03/19/Storage-basic/index.html">
+<meta property="og:site_name" content="Mark-Yoo&#39;s Frontend Life">
+<meta property="og:description" content="3월 19일 화요일 오늘 배운 것storage basic Web Storage 쿠키의 단점을 보완하기 위해 나온 저장소 Server Session, Client Cookie  localStorage : sessionStorage :  저장할 데이터에 대한 키(key)값 불러올 때는 저장할 때 사용한 키(key) 값을 이용해 불러온다. - getItem  j">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-20T00:50:51.077Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Storage basic">
+<meta name="twitter:description" content="3월 19일 화요일 오늘 배운 것storage basic Web Storage 쿠키의 단점을 보완하기 위해 나온 저장소 Server Session, Client Cookie  localStorage : sessionStorage :  저장할 데이터에 대한 키(key)값 불러올 때는 저장할 때 사용한 키(key) 값을 이용해 불러온다. - getItem  j">
+  
+    <link rel="alternate" href="/atom.xml" title="Mark-Yoo&#39;s Frontend Life" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Mark-Yoo&#39;s Frontend Life</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://Mark-Yoo.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Storage-basic" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/19/Storage-basic/" class="article-date">
+  <time datetime="2019-03-19T04:15:37.000Z" itemprop="datePublished">2019-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Storage basic
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>3월 19일 화요일</p>
+<p>오늘 배운 것<br>storage basic</p>
+<pre><code>Web Storage
+쿠키의 단점을 보완하기 위해 나온 저장소
+Server Session, Client Cookie
+
+localStorage :
+sessionStorage :
+
+저장할 데이터에 대한 키(key)값
+불러올 때는 저장할 때 사용한 키(key) 값을 이용해 불러온다. - getItem
+
+jqeury .serialize - form 안에 있어야 읽을 수 있음
+
+var key - 두 부분을 구분해서 더 구별하기 쉽게하기 위해서 두 곳에 다 변수를 선언하고 표시한다
+var data
+</code></pre><hr>
+<pre><code>&lt;form id=&quot;content_form&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;content1&quot; id=&quot;content1&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;content2&quot; id=&quot;content2&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;content3&quot; id=&quot;content3&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;content&quot; id=&quot;content&quot;&gt;
+    &lt;button id=&quot;btn_save&quot;&gt;Save&lt;/button&gt;
+    &lt;button id=&quot;btn_load&quot;&gt;Load&lt;/button&gt;
+&lt;/form&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+        // 변수로 storage_key의 값을 선언 (form의 id)
+        // local storage로 저장을 위한 식
+        var storage_key = &quot;content&quot;;
+        $(function() {
+            $(&apos;#btn_save&apos;).click(function() {
+                // 폼 데이터를 문자열로 합치기
+                var form_content = $(&apos;#content_form&apos;).serialize();
+
+                // 합친 문자열을 localStorage에 저장
+                localStorage.setItem(storage_key, form_content);
+
+                //폼 submit이 일어나지 않게
+                return false;
+            });
+
+        // local storage에 저장된 정보를 다시 불러오는 식
+        $(&apos;#btn_load&apos;).click(function() {
+            form_content = localStorage.getItem(storage_key);
+
+            // 각 정보들 사이가 &amp;로 연결되어 저장되는데 이를 split을 이용해서 분리, 각 항에 다시 표시한다.
+            var split_data = form_content.split(&quot;&amp;&quot;);
+            for ( var i in split_data) {
+                var content_data = split_data[i].split(&quot;=&quot;);
+                var key = content_data[0];
+                var data = content_data[1];
+                $(&apos;#&apos;+key).val(data);
+            }
+            return false;
+&lt;/script&gt;
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://Mark-Yoo.github.io/2019/03/19/Storage-basic/" data-id="cjtghs3iv00009rs513toktwj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/18/Validation-check/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Validation check</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/03/19/Storage-basic/">Storage basic</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/18/Validation-check/">Validation check</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/15/How-to-make-random-number-generator/">How to make random number generator.</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/14/To-do-list만들기/">To-do_list만들기</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/13/what-have-I-done-to-you-node/">what-have-I-done-to-you-node?</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Mark Yoo<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
