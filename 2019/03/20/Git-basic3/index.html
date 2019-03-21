@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Mark-Yoo&#39;s Frontend Life">
 <meta property="og:description" content="#Git으로 협업하기 ##git flow practice ###index - git init - git flow init - git flow feature start &amp;apos;feature-name&amp;apos; - git add README.md - git commit -m &amp;quot;feat: add README-md&amp;quot; - git flow fea">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-21T00:47:11.627Z">
+<meta property="og:updated_time" content="2019-03-21T00:52:56.046Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git basic3">
 <meta name="twitter:description" content="#Git으로 협업하기 ##git flow practice ###index - git init - git flow init - git flow feature start &amp;apos;feature-name&amp;apos; - git add README.md - git commit -m &amp;quot;feat: add README-md&amp;quot; - git flow fea">
@@ -116,17 +116,21 @@ v0.0.1.00190320001a = 알파버전
 
 작업 이후 devlop으로 push. 그 이후 github에서 pull-request 버튼 클릭 그 이후 base:develop으로 설정. 
 master로 설정하면 바로 검증없이 live로 넘어가버리는 경우가 생김
-</code></pre><ul>
-<li><p>continous pull</p>
-<p>  실시간으로 변하는 원본 레포를 반영하기 위해 한 번 pull request 한 뒤 git remote add rmorigin –주소– 하면 새롭게 바뀌는 pm의 레포를 떠올 수 있다.</p>
-<p>  git fetch rmorigin develop - 일단 받아둠<br>  git merge rmorigin/develop - 새로 받은 정보로 덮어씌우기<br>  git pull -u origin develop - push 하기 전에 한 번 더 최신화하기<br>  git push origin develop</p>
-</li>
-</ul>
 
+- continous pull
+
+실시간으로 변하는 원본 레포를 반영하기 위해 한 번 pull request 한 뒤 
+git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 떠올 수 있다.
+
+    * git fetch rmorigin develop - 일단 받아둠
+    * git merge rmorigin/develop - 새로 받은 정보로 덮어씌우기
+    * git pull -u origin develop - push 하기 전에 한 번 더 최신화하기
+    * git push origin develop
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/20/Git-basic3/" data-id="cjthx30po0000h9s5qsjkx1ww" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/20/Git-basic3/" data-id="cjthx99ck0000i8s5o72xty1n" class="article-share-link">Share</a>
       
       
     </footer>
