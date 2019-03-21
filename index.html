@@ -62,6 +62,76 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Git-basic3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/20/Git-basic3/" class="article-date">
+  <time datetime="2019-03-20T04:12:42.000Z" itemprop="datePublished">2019-03-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/20/Git-basic3/">Git basic3</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#Git으로 협업하기</p>
+<p>##git flow practice</p>
+<p>###index</p>
+<pre><code>- git init
+- git flow init
+- git flow feature start &apos;feature-name&apos;
+- git add README.md
+- git commit -m &quot;feat: add README-md&quot;
+- git flow feature finish &apos;feature-name
+
+브랜치에서 push 하지않고 merge(finish)하게 되면 feature가 사라짐
+push 하고 finish 하게 되면 기록이 다 남음(feature)가 남음.
+
+- git flow release start v0.0.1.00190320001
+- git flow release finish v0.0.1.00190320001
+
+
+v0.0.1.00190320001 = 버전 이름 붙이기 00 = 2000년대 
+                        19 = 2019년 
+                        03=3월 
+                        20=20일 
+                        001=버전 1
+v0.0.1.00190320001a = 알파버전
+
+
+- 협업하기 - github fork 누르고 이동하는 곳에서 클론 이후에 master에서 git branch develop 만들기 -&gt; git pull origin devleop 해서 작업 시작 (master에서 끌어옴)
+
+작업 이후 devlop으로 push. 그 이후 github에서 pull-request 버튼 클릭 그 이후 base:develop으로 설정. master로 설정하면 바로 검증없이 live로 넘어가버림
+</code></pre><ul>
+<li><p>continous pull</p>
+<p>  실시간으로 변하는 원본 레포를 반영하기 위해 한 번 pull request 한 뒤 git remote add rmorigin –주소– 하면 새롭게 바뀌는 pm의 레포를 떠올 수 있다.</p>
+<p>  git fetch rmorigin develop - 일단 받아둠<br>  git merge rmorigin/develop - 새로 받은 정보로 덮어씌우기<br>  git pull -u origin develop - push 하기 전에 한 번 더 최신화하기<br>  git push origin develop</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://Mark-Yoo.github.io/2019/03/20/Git-basic3/" data-id="cjthwxgd50000efs5rczaoch2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Storage-basic" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/19/Storage-basic/" class="article-date">
@@ -146,7 +216,7 @@ var data
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/19/Storage-basic/" data-id="cjtghs3iv00009rs513toktwj" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/19/Storage-basic/" data-id="cjthwxgd90001efs5rkoyhp8d" class="article-share-link">Share</a>
       
       
     </footer>
@@ -226,7 +296,7 @@ var data
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/18/Validation-check/" data-id="cjtghs3iz00019rs5ab2p5u7q" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/18/Validation-check/" data-id="cjthwxgde0006efs5243507j9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -295,7 +365,7 @@ var data
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/15/How-to-make-random-number-generator/" data-id="cjtghs3j100039rs5itycnrn4" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/15/How-to-make-random-number-generator/" data-id="cjthwxgdc0004efs5nx2o280w" class="article-share-link">Share</a>
       
       
     </footer>
@@ -342,7 +412,7 @@ var data
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/14/To-do-list만들기/" data-id="cjtghs3j400069rs57dtyp3ug" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/14/To-do-list만들기/" data-id="cjthwxgda0002efs5ezi0syfw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -385,7 +455,7 @@ var data
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/13/what-have-I-done-to-you-node/" data-id="cjtghs3j300059rs5nohpq5t3" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/13/what-have-I-done-to-you-node/" data-id="cjthwxgdn0007efs5cvhw5q3z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -422,7 +492,7 @@ var data
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/13/How-to-start-hexo/" data-id="cjtghs3j000029rs5xmw5aiv4" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/13/How-to-start-hexo/" data-id="cjthwxgdb0003efs5m2tfzoxz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -467,7 +537,7 @@ var data
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://Mark-Yoo.github.io/2019/03/13/hello-world/" data-id="cjtghs3j200049rs53nq415k4" class="article-share-link">Share</a>
+      <a data-url="http://Mark-Yoo.github.io/2019/03/13/hello-world/" data-id="cjthwxgdd0005efs5jxi0jly8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -508,6 +578,10 @@ var data
       <ul>
         
           <li>
+            <a href="/2019/03/20/Git-basic3/">Git basic3</a>
+          </li>
+        
+          <li>
             <a href="/2019/03/19/Storage-basic/">Storage basic</a>
           </li>
         
@@ -521,10 +595,6 @@ var data
         
           <li>
             <a href="/2019/03/14/To-do-list만들기/">To-do_list만들기</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/13/what-have-I-done-to-you-node/">what-have-I-done-to-you-node?</a>
           </li>
         
       </ul>
