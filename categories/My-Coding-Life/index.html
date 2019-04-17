@@ -152,6 +152,134 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-17T10:14:50.000Z">2019-04-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 659 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/17/Computer-Sceicne-beginner/">Computer Sceicne - beginner</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Basic-of-the-computer-science"><a href="#Basic-of-the-computer-science" class="headerlink" title="Basic of the computer science"></a>Basic of the computer science</h1><h2 id="알고리즘-기초"><a href="#알고리즘-기초" class="headerlink" title="알고리즘 기초"></a>알고리즘 기초</h2><ol>
+<li><p>Memory 32bit / 64bit의 차이 - 메모리의 속도</p>
+<ul>
+<li>32bit와 64bit의 가장 큰 차이는 메모리의 속도</li>
+<li>CPU와 RAM 사이에 연결된 와이어의 갯수가 32개 62개의 차이에서 비롯된다.</li>
+<li>이 와이어를 통해서 0과 1값이 0v와 5v의 전압으로 신호가 되어 RAM과 CPU를 건너다니게 된다.</li>
+<li>32bit는 이론상 약 4Gigabyte의 정보량을 옮길 수 있고 이 때문에 그 이상의 아무리 큰 용량의 RAM을 사용하더라도 그 기능을 다 사용하지 못할 수 있다.</li>
+<li>64bit 컴퓨터라고해서 32bit의 프로그램을 사용하지 못하는 것은 아니다. 다만 64bit 컴퓨터 성능을 전부 활용하지 못하고 절반인 32bit만 사용할 뿐이다.</li>
+</ul>
+</li>
+<li><p>Memory Address</p>
+<ul>
+<li>32개의 자릿수, 2진수  /  32bit 컴퓨터</li>
+<li>64개의 자릿수, 2진수  /  64bit 컴퓨터</li>
+<li>메모리에서는 1바이트 하나당 메모리 주소값 하나를 할당해준다.</li>
+<li>1byte = 8bit</li>
+<li>32bit = 2^32</li>
+</ul>
+</li>
+<li><p>정수(integer) : 정수는 범위는 좁지만 정밀한 계산이 가능</p>
+<ul>
+<li>기수법 : 2진수, 10진수, 16진수<ul>
+<li>2진수 : 0 1 - 2개</li>
+<li>10진수 : 0 1 2 3 4 5 6 7 8 9 - 10개</li>
+<li>16진수 : 0 1 2 3 4 5 6 7 8 9 a b c d e f - 16개<ul>
+<li>16진수 알파벳의 2진수 표기법<ul>
+<li>a : 1010</li>
+<li>b : 1011</li>
+<li>c : 1100</li>
+<li>d : 1101</li>
+<li>e : 1110</li>
+<li>f : 1111</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ex. 10진수 -&gt; 2진수 변환<ul>
+<li>37 = 32 + 4 + 1 = 2^5 + 2^2 + 2^0 = 100101</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>실수 : 범위는 넓지만 정밀도가 떨어짐</p>
+<ul>
+<li>변수로 0.01을 주고 for문을 이용해 100번 더하는 연산 예제를 만들면 결과값이 1이 아닌 1에 매우 근접한 1.0000000000000007이 나옴. </li>
+<li>더 복잡한 변수 0.015625라는 값을 100번 더하는 연산 예제에서는 1.5625라는 정확한 값을 도출해낸다.</li>
+<li>이해를 위해서는 ‘부동소수점’ 개념을 이해해야한다.<ul>
+<li>예시<ul>
+<li>123.456</li>
+<li>1.23456 * 10^2</li>
+<li>12.3456 * 10^1</li>
+<li>1234.56 * 10^-1</li>
+<li>12345.6 * 10^-2</li>
+</ul>
+</li>
+<li>소수점 위치가 앞이나 뒤로 떠다니듯 움직이므로 ‘부동소수점’이라고 칭함</li>
+</ul>
+</li>
+<li>부동소수점 설계중 담을 공간이 부족해서 누락되는 데이터들로 인해 실수는 완벽하고 치밀한 계산이 힘들어진다.</li>
+</ul>
+</li>
+</ol>
+<h2 id="CPU는-더하기-기능을-하는-Adder-가산기-만을-가지고-있다"><a href="#CPU는-더하기-기능을-하는-Adder-가산기-만을-가지고-있다" class="headerlink" title="CPU는 더하기 기능을 하는 Adder(가산기)만을 가지고 있다."></a>CPU는 더하기 기능을 하는 Adder(가산기)만을 가지고 있다.</h2><ul>
+<li>Adder만의 가지고 사칙연산을 모두 수행 </li>
+<li>메모리 구조<ul>
+<li>0 0000 000 (부호 지수부 가수부)</li>
+<li>맨 앞은 +,- 부호를 결정하는 자리 (0은 양수 1은 음수), 지수부는 exp값, 가수부는 man 값.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><ul>
+<li>Javascript is a … language.<ul>
+<li>Single-threaded</li>
+<li>Non-blocking</li>
+<li>Asynchronous</li>
+<li>Concurrent</li>
+</ul>
+</li>
+<li>자바스크립트는 모든 숫자가 Double로 들어간다 (8byte) -&gt; 무거움</li>
+<li>자바스크립트는 I/O bound 개념을 기초로 만들어짐. CPU-bound는 서버가 부담.</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-04-02T03:09:26.000Z">2019-04-02</time>
                 
                 <div class="level-item">
@@ -353,17 +481,17 @@ position:sticky;
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        2
+                        3
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tag
+                        Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        3
                     </p>
                 </div>
             </div>
@@ -466,9 +594,17 @@ position:sticky;
                 <span class="level-item">My Coding Life</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">3</span>
             </span>
         </a><ul><li>
+        <a class="level is-marginless" href="/categories/My-Coding-Life/Computer-Science/">
+            <span class="level-start">
+                <span class="level-item">Computer Science</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/HTML-CSS/">
             <span class="level-start">
                 <span class="level-item">HTML/CSS</span>
@@ -488,7 +624,7 @@ position:sticky;
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/HTML-CSS/" style="font-size: 10px;">HTML, CSS</a>
+        <a href="/tags/HTML-CSS/" style="font-size: 20px;">HTML, CSS</a> <a href="/tags/computer-science/" style="font-size: 10px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 10px;">computer science basic</a>
     </div>
 </div>
 
@@ -516,7 +652,7 @@ position:sticky;
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-17T10:14:50.000Z">2019-04-17</time></div>
                     <a href="/2019/04/17/Computer-Sceicne-beginner/" class="has-link-black-ter is-size-6">Computer Sceicne - beginner</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
                     </p>
                 </div>
             </div>
@@ -652,6 +788,20 @@ position:sticky;
                     </a>
                 </div>
                 
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/computer-science/">
+                        <span class="tag">computer science</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/computer-science-basic/">
+                        <span class="tag">computer science basic</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -688,7 +838,7 @@ position:sticky;
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-17T10:14:50.000Z">2019-04-17</time></div>
                     <a href="/2019/04/17/Computer-Sceicne-beginner/" class="has-link-black-ter is-size-6">Computer Sceicne - beginner</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
                     </p>
                 </div>
             </div>
@@ -821,6 +971,20 @@ position:sticky;
                     <a class="tags has-addons" href="/tags/HTML-CSS/">
                         <span class="tag">HTML, CSS</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/computer-science/">
+                        <span class="tag">computer science</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/computer-science-basic/">
+                        <span class="tag">computer science basic</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
