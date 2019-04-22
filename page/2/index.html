@@ -141,6 +141,104 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-03-19T04:15:37.000Z">2019-03-19</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 297 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/03/19/Storage-basic/">Storage basic</a>
+            
+        </h1>
+        <div class="content">
+            <p>3월 19일 화요일</p>
+<p>오늘 배운 것<br>storage basic</p>
+<pre><code>Web Storage
+쿠키의 단점을 보완하기 위해 나온 저장소
+Server Session, Client Cookie
+
+localStorage :
+sessionStorage :
+
+저장할 데이터에 대한 키(key)값
+불러올 때는 저장할 때 사용한 키(key) 값을 이용해 불러온다. - getItem
+
+jqeury .serialize - form 안에 있어야 읽을 수 있음
+
+var key - 두 부분을 구분해서 더 구별하기 쉽게하기 위해서 두 곳에 다 변수를 선언하고 표시한다
+var data
+</code></pre><hr>
+<pre><code>&lt;form id=&quot;content_form&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;content1&quot; id=&quot;content1&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;content2&quot; id=&quot;content2&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;content3&quot; id=&quot;content3&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;content&quot; id=&quot;content&quot;&gt;
+    &lt;button id=&quot;btn_save&quot;&gt;Save&lt;/button&gt;
+    &lt;button id=&quot;btn_load&quot;&gt;Load&lt;/button&gt;
+&lt;/form&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+        // 변수로 storage_key의 값을 선언 (form의 id)
+        // local storage로 저장을 위한 식
+        var storage_key = &quot;content&quot;;
+        $(function() {
+            $(&apos;#btn_save&apos;).click(function() {
+                // 폼 데이터를 문자열로 합치기
+                var form_content = $(&apos;#content_form&apos;).serialize();
+
+                // 합친 문자열을 localStorage에 저장
+                localStorage.setItem(storage_key, form_content);
+
+                //폼 submit이 일어나지 않게
+                return false;
+            });
+
+        // local storage에 저장된 정보를 다시 불러오는 식
+        $(&apos;#btn_load&apos;).click(function() {
+            form_content = localStorage.getItem(storage_key);
+
+            // 각 정보들 사이가 &amp;로 연결되어 저장되는데 이를 split을 이용해서 분리, 각 항에 다시 표시한다.
+            var split_data = form_content.split(&quot;&amp;&quot;);
+            for ( var i in split_data) {
+                var content_data = split_data[i].split(&quot;=&quot;);
+                var key = content_data[0];
+                var data = content_data[1];
+                $(&apos;#&apos;+key).val(data);
+            }
+            return false;
+&lt;/script&gt;
+</code></pre>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-03-18T07:23:04.000Z">2019-03-18</time>
                 
                 
@@ -546,7 +644,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        16
+                        17
                     </p>
                 </div>
             </div>
@@ -556,7 +654,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        7
+                        8
                     </p>
                 </div>
             </div>
@@ -669,7 +767,7 @@
                 <span class="level-item">My Coding Life</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">9</span>
+                <span class="level-item tag">10</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Computer-Science/">
@@ -709,7 +807,7 @@
                 <span class="level-item">Python</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">3</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Team-Project/">
@@ -731,7 +829,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Basic-Javascript/" style="font-size: 20px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 20px;">HTML, CSS</a> <a href="/tags/computer-science/" style="font-size: 20px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 20px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-basic/" style="font-size: 20px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
+        <a href="/tags/Basic-Javascript/" style="font-size: 15px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 15px;">HTML, CSS</a> <a href="/tags/computer-science/" style="font-size: 15px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 15px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-basic/" style="font-size: 20px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
     </div>
 </div>
 
@@ -745,6 +843,25 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/04/22/Python-Basic3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic3">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-22T10:53:08.000Z">2019-04-22</time></div>
+                    <a href="/2019/04/22/Python-Basic3/" class="has-link-black-ter is-size-6">Python Basic3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -822,25 +939,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/03/HTML-CSS-Semantic-Markup1/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="HTML/CSS Semantic Markup1">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-03T03:08:14.000Z">2019-04-03</time></div>
-                    <a href="/2019/04/03/HTML-CSS-Semantic-Markup1/" class="has-link-black-ter is-size-6">HTML/CSS Semantic Markup1</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -859,7 +957,7 @@
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">7</span>
+                    <span class="level-item tag">8</span>
                 </span>
             </a>
         </li>
@@ -940,14 +1038,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/python/">
                         <span class="tag">python</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/python-basic/">
                         <span class="tag">python basic</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -983,6 +1081,25 @@
         
         <article class="media">
             
+            <a href="/2019/04/22/Python-Basic3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic3">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-22T10:53:08.000Z">2019-04-22</time></div>
+                    <a href="/2019/04/22/Python-Basic3/" class="has-link-black-ter is-size-6">Python Basic3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/22/Python-Basic2/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic2">
@@ -1057,25 +1174,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/03/HTML-CSS-Semantic-Markup1/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="HTML/CSS Semantic Markup1">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-03T03:08:14.000Z">2019-04-03</time></div>
-                    <a href="/2019/04/03/HTML-CSS-Semantic-Markup1/" class="has-link-black-ter is-size-6">HTML/CSS Semantic Markup1</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1094,7 +1192,7 @@
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">7</span>
+                    <span class="level-item tag">8</span>
                 </span>
             </a>
         </li>
@@ -1175,14 +1273,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/python/">
                         <span class="tag">python</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/python-basic/">
                         <span class="tag">python basic</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 

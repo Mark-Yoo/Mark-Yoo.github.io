@@ -2,24 +2,24 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>How to make random number generator. - Mark-Yoo&#39;s Frontend Life</title>
+<title>Python Basic3 - Mark-Yoo&#39;s Frontend Life</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="랜덤 번호 생성하기JavaScript를 이용해 일정범위의 숫자들을 무작위로 뽑아내는 랜덤 번호 생성기 만들기를 배웠다.아직은 JavaScript를 이용하는데에 제대로 이해가 되지않아 여러번 코드를 다시봐야하지만,그래도 하고싶었던 일에 도전한다는 것이 즐겁고 재미있다고 생각한다. 사실 즐겁고 재밌다고생각한다는 것이 아직 내 노력이 부족한것이 아닐까라는 생각이">
-<meta name="keywords" content="Basic Javascript">
+    <meta name="description" content="Call by reference VS Call by value immutable object 함수 내부에서 값을 변경할 수 없음   mutable object  list, dictionary, set 새로운 객체를 할당하는 게 아니라면 함수 내부에서 값을 변경할 수 있음   만약 immutable object인 tuple 값을 바꿔야 한다면 tuple 내가">
+<meta name="keywords" content="python basic,python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to make random number generator.">
-<meta property="og:url" content="http://Mark-Yoo.github.io/2019/03/15/How-to-make-random-number-generator/index.html">
+<meta property="og:title" content="Python Basic3">
+<meta property="og:url" content="http://Mark-Yoo.github.io/2019/04/22/Python-Basic3/index.html">
 <meta property="og:site_name" content="Mark-Yoo&#39;s Frontend Life">
-<meta property="og:description" content="랜덤 번호 생성하기JavaScript를 이용해 일정범위의 숫자들을 무작위로 뽑아내는 랜덤 번호 생성기 만들기를 배웠다.아직은 JavaScript를 이용하는데에 제대로 이해가 되지않아 여러번 코드를 다시봐야하지만,그래도 하고싶었던 일에 도전한다는 것이 즐겁고 재미있다고 생각한다. 사실 즐겁고 재밌다고생각한다는 것이 아직 내 노력이 부족한것이 아닐까라는 생각이">
+<meta property="og:description" content="Call by reference VS Call by value immutable object 함수 내부에서 값을 변경할 수 없음   mutable object  list, dictionary, set 새로운 객체를 할당하는 게 아니라면 함수 내부에서 값을 변경할 수 있음   만약 immutable object인 tuple 값을 바꿔야 한다면 tuple 내가">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://mark-yoo.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-18T00:59:25.376Z">
+<meta property="og:updated_time" content="2019-04-22T11:10:03.438Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to make random number generator.">
-<meta name="twitter:description" content="랜덤 번호 생성하기JavaScript를 이용해 일정범위의 숫자들을 무작위로 뽑아내는 랜덤 번호 생성기 만들기를 배웠다.아직은 JavaScript를 이용하는데에 제대로 이해가 되지않아 여러번 코드를 다시봐야하지만,그래도 하고싶었던 일에 도전한다는 것이 즐겁고 재미있다고 생각한다. 사실 즐겁고 재밌다고생각한다는 것이 아직 내 노력이 부족한것이 아닐까라는 생각이">
+<meta name="twitter:title" content="Python Basic3">
+<meta name="twitter:description" content="Call by reference VS Call by value immutable object 함수 내부에서 값을 변경할 수 없음   mutable object  list, dictionary, set 새로운 객체를 할당하는 게 아니라면 함수 내부에서 값을 변경할 수 있음   만약 immutable object인 tuple 값을 바꿔야 한다면 tuple 내가">
 <meta name="twitter:image" content="http://mark-yoo.github.io/images/og_image.png">
 
 
@@ -94,7 +94,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="How to make random number generator." height="28">
+                <img src="/images/logo.svg" alt="Python Basic3" height="28">
             
             </a>
         </div>
@@ -145,17 +145,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-03-15T08:47:57.000Z">2019-03-15</time>
+                <time class="level-item has-text-grey" datetime="2019-04-22T10:53:08.000Z">2019-04-22</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/JavaScript/">JavaScript</a>
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 406 words)
+                    2 minutes read (About 257 words)
                 </span>
                 
                 
@@ -164,51 +164,41 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                How to make random number generator.
+                Python Basic3
             
         </h1>
         <div class="content">
-            <h1 id="랜덤-번호-생성하기"><a href="#랜덤-번호-생성하기" class="headerlink" title="랜덤 번호 생성하기"></a>랜덤 번호 생성하기</h1><p>JavaScript를 이용해 일정범위의 숫자들을 무작위로 뽑아내는 랜덤 번호 생성기 만들기를 배웠다.<br>아직은 JavaScript를 이용하는데에 제대로 이해가 되지않아 여러번 코드를 다시봐야하지만,<br>그래도 하고싶었던 일에 도전한다는 것이 즐겁고 재미있다고 생각한다. 사실 즐겁고 재밌다고<br>생각한다는 것이 아직 내 노력이 부족한것이 아닐까라는 생각이 들어 좀 더 치열하게 공부해야겠다는<br>생각이 든다.</p>
-<p>오늘 배운 코드 정리</p>
-<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
-    // 같은 코드를 총 5번 반복하기 위해 for 반복문을 이용
-        for(j=0;j&lt;5;j++) {
-
-    // var 을 이용해 변수를 선언하고 original_numbers의 공간을 빈 공간으로 설정
-        var original_numbers = [];
-
-    // 1부터 45사이의 숫자 범위를 정하기 위해 for 반복문을 이용해서 작성
-    // for 반복분은 초기식이 실행된 후에 다시 한번 조건을 비교할 때 사용
-        for(i=1;i&lt;45;i++) {
-
-    // push 명령을 통해 i 값을 출력
-            original_numbers.push(i);
-        }
-
-
-    var numbers = []; //숫자를 담을 공간
-
-    // for문을 이용한 반복으로 6개의 랜덤한 숫자를 뽑아내고 6개의 랜덤한 숫자가 뽑혔을 경우 종료
-    for(i=0;i&lt;6;i++) {
-        var number_index = Math.floor((Math.random() * original_numbers.length));
-        var get_number = original_numbers[number_index];
-        numbers.push(get_number);
-        original_numbers.splice(number_index,1)
-    }
-
-    //뽑힌 6개의 숫자들을 작은 숫자부터 큰 숫자 순서대로 나열하기
-    numbers.sort(function(a, b) {return a-b});
-    console.log(numbers);
-    }
-&lt;/script&gt;
-</code></pre>
+            <h1 id="Call-by-reference-VS-Call-by-value"><a href="#Call-by-reference-VS-Call-by-value" class="headerlink" title="Call by reference VS Call by value"></a>Call by reference VS Call by value</h1><ul>
+<li>immutable object<ul>
+<li>함수 내부에서 값을 변경할 수 없음</li>
+</ul>
+</li>
+<li><p>mutable object</p>
+<ul>
+<li>list, dictionary, set</li>
+<li>새로운 객체를 할당하는 게 아니라면</li>
+<li>함수 내부에서 값을 변경할 수 있음</li>
+</ul>
+</li>
+<li><p>만약 immutable object인 tuple 값을 바꿔야 한다면 tuple 내가 아닌 바깥 쪽에서 값을 받아오고 이를 return 함수를 이용해서 바꾸면 된다.</p>
+</li>
+</ul>
+<h2 id="Call-by-reference"><a href="#Call-by-reference" class="headerlink" title="Call by reference"></a>Call by reference</h2><ul>
+<li>call by reference 방식은 value의 주소를 복사해서 쓰는 방식으로 value의 값이 바뀌더라도 주소만 그대로라면 value 값의 변화를 받아올 수 있다. </li>
+<li>바깥으로의 접근과 수정이 가능</li>
+</ul>
+<h2 id="Call-by-value"><a href="#Call-by-value" class="headerlink" title="Call by value"></a>Call by value</h2><ul>
+<li>value 값을 ‘복사’ 해온는 방법. 실제로 보이는 값은 같아보이지만 독자적으로 그 복사값을 가지게 되므로, 원본 value 값이 바뀌더라도 변화가 없다.</li>
+<li>바깥으로의 접근이 불가</li>
+</ul>
+<h2 id="이-둘을-인자-전달-방식에-따른-함수-구분이라고-한다"><a href="#이-둘을-인자-전달-방식에-따른-함수-구분이라고-한다" class="headerlink" title="이 둘을 인자 전달 방식에 따른 함수 구분이라고 한다."></a>이 둘을 인자 전달 방식에 따른 함수 구분이라고 한다.</h2>
         </div>
         
         <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/Basic-Javascript/">Basic Javascript</a>
+                    <a class="has-link-grey -link" href="/tags/python/">python</a>, <a class="has-link-grey -link" href="/tags/python-basic/">python basic</a>
                 </div>
             </div>
         </div>
@@ -259,17 +249,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/03/18/Validation-check/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Validation check</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/03/14/To-do-list만들기/">
-                <span class="level-item">To-do_list만들기</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/04/22/Python-Basic2/">
+                <span class="level-item">Python Basic2</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -985,7 +968,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="How to make random number generator." height="28">
+                    <img src="/images/logo.svg" alt="Python Basic3" height="28">
                 
                 </a>
                 <p class="is-size-7">
