@@ -141,6 +141,83 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-03-15T08:47:57.000Z">2019-03-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/JavaScript/">JavaScript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 406 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/03/15/How-to-make-random-number-generator/">How to make random number generator.</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="랜덤-번호-생성하기"><a href="#랜덤-번호-생성하기" class="headerlink" title="랜덤 번호 생성하기"></a>랜덤 번호 생성하기</h1><p>JavaScript를 이용해 일정범위의 숫자들을 무작위로 뽑아내는 랜덤 번호 생성기 만들기를 배웠다.<br>아직은 JavaScript를 이용하는데에 제대로 이해가 되지않아 여러번 코드를 다시봐야하지만,<br>그래도 하고싶었던 일에 도전한다는 것이 즐겁고 재미있다고 생각한다. 사실 즐겁고 재밌다고<br>생각한다는 것이 아직 내 노력이 부족한것이 아닐까라는 생각이 들어 좀 더 치열하게 공부해야겠다는<br>생각이 든다.</p>
+<p>오늘 배운 코드 정리</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    // 같은 코드를 총 5번 반복하기 위해 for 반복문을 이용
+        for(j=0;j&lt;5;j++) {
+
+    // var 을 이용해 변수를 선언하고 original_numbers의 공간을 빈 공간으로 설정
+        var original_numbers = [];
+
+    // 1부터 45사이의 숫자 범위를 정하기 위해 for 반복문을 이용해서 작성
+    // for 반복분은 초기식이 실행된 후에 다시 한번 조건을 비교할 때 사용
+        for(i=1;i&lt;45;i++) {
+
+    // push 명령을 통해 i 값을 출력
+            original_numbers.push(i);
+        }
+
+
+    var numbers = []; //숫자를 담을 공간
+
+    // for문을 이용한 반복으로 6개의 랜덤한 숫자를 뽑아내고 6개의 랜덤한 숫자가 뽑혔을 경우 종료
+    for(i=0;i&lt;6;i++) {
+        var number_index = Math.floor((Math.random() * original_numbers.length));
+        var get_number = original_numbers[number_index];
+        numbers.push(get_number);
+        original_numbers.splice(number_index,1)
+    }
+
+    //뽑힌 6개의 숫자들을 작은 숫자부터 큰 숫자 순서대로 나열하기
+    numbers.sort(function(a, b) {return a-b});
+    console.log(numbers);
+    }
+&lt;/script&gt;
+</code></pre>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-03-14T13:03:09.000Z">2019-03-14</time>
                 
                 
@@ -385,7 +462,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        14
+                        15
                     </p>
                 </div>
             </div>
@@ -395,7 +472,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        6
+                        7
                     </p>
                 </div>
             </div>
@@ -405,7 +482,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        10
                     </p>
                 </div>
             </div>
@@ -508,7 +585,7 @@
                 <span class="level-item">My Coding Life</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Computer-Science/">
@@ -543,6 +620,14 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
+        <a class="level is-marginless" href="/categories/My-Coding-Life/Python/">
+            <span class="level-start">
+                <span class="level-item">Python</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Team-Project/">
             <span class="level-start">
                 <span class="level-item">Team Project</span>
@@ -562,7 +647,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Basic-Javascript/" style="font-size: 20px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 20px;">HTML, CSS</a> <a href="/tags/computer-science/" style="font-size: 20px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 20px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
+        <a href="/tags/Basic-Javascript/" style="font-size: 20px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 20px;">HTML, CSS</a> <a href="/tags/computer-science/" style="font-size: 20px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 20px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/python-basic/" style="font-size: 10px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
     </div>
 </div>
 
@@ -576,6 +661,25 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/04/22/Python-Basic1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-22T08:58:03.000Z">2019-04-22</time></div>
+                    <a href="/2019/04/22/Python-Basic1/" class="has-link-black-ter is-size-6">Python Basic1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -653,25 +757,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/01/2019-04-01TIL-HTML-CSS/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="2019-04-01TIL HTML/CSS">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-01T11:21:59.000Z">2019-04-01</time></div>
-                    <a href="/2019/04/01/2019-04-01TIL-HTML-CSS/" class="has-link-black-ter is-size-6">2019-04-01TIL HTML/CSS</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/HTML-CSS/">HTML/CSS</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -690,7 +775,7 @@
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">6</span>
                 </span>
             </a>
         </li>
@@ -764,6 +849,20 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/jQuery/">
                         <span class="tag">jQuery</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/python/">
+                        <span class="tag">python</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/python-basic/">
+                        <span class="tag">python basic</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -800,6 +899,25 @@
         
         <article class="media">
             
+            <a href="/2019/04/22/Python-Basic1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-22T08:58:03.000Z">2019-04-22</time></div>
+                    <a href="/2019/04/22/Python-Basic1/" class="has-link-black-ter is-size-6">Python Basic1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/18/Computer-Science-beginner2/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science - beginner2">
@@ -874,25 +992,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/01/2019-04-01TIL-HTML-CSS/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="2019-04-01TIL HTML/CSS">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-01T11:21:59.000Z">2019-04-01</time></div>
-                    <a href="/2019/04/01/2019-04-01TIL-HTML-CSS/" class="has-link-black-ter is-size-6">2019-04-01TIL HTML/CSS</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/HTML-CSS/">HTML/CSS</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -911,7 +1010,7 @@
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">6</span>
                 </span>
             </a>
         </li>
@@ -985,6 +1084,20 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/jQuery/">
                         <span class="tag">jQuery</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/python/">
+                        <span class="tag">python</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/python-basic/">
+                        <span class="tag">python basic</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
