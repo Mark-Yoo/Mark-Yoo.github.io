@@ -161,7 +161,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 470 words)
+                    4 minutes read (About 558 words)
                 </span>
                 
                 
@@ -176,13 +176,27 @@
         <div class="content">
             <h1 id="Binary-Search-이진-탐색-VS-Linear-Search-선형-탐색"><a href="#Binary-Search-이진-탐색-VS-Linear-Search-선형-탐색" class="headerlink" title="Binary Search (이진 탐색) VS. Linear Search (선형 탐색)"></a>Binary Search (이진 탐색) VS. Linear Search (선형 탐색)</h1><h2 id="Linear-Search"><a href="#Linear-Search" class="headerlink" title="Linear Search"></a>Linear Search</h2><ul>
 <li>Linear search(선형 탐색)은 li를 순차적을 0번부터 끝까지 탐색을 하면서 target 값을 찾아내는 방법이다.</li>
-<li>Linear search의 단점은 모든 자료를 처음부터 둘러봐야되는 점 때문에 자료의 양이 많아질수록 탐색 시간이 기하급수적으로 늘어난다.</li>
+<li>Linear search의 단점은 모든 자료를 처음부터 둘러봐야되는 점 때문에 자료의 양이 많아질수록 탐색 시간이 기하급수적으로 늘어난다.<h2 id="Linear-Search-Example"><a href="#Linear-Search-Example" class="headerlink" title="Linear Search Example"></a>Linear Search Example</h2></li>
+</ul>
+<hr>
+<img src="/2019/04/23/Python-Basic4/binary_search3.png" title="values in li">
+<ul>
+<li>li 에 주어진 value의 순서</li>
+</ul>
+<img src="/2019/04/23/Python-Basic4/linear_search.png" title="linear search basic">
+<ul>
+<li>index 값의 범위를 li의 length로 설정하고 index값이 li의 index값이 target과 동일할 경우 index값을 출력하는 linear search 공식</li>
+</ul>
+<img src="/2019/04/23/Python-Basic4/linear_search2.png" title="result from linear search">
+<ul>
+<li>5번째에 위치한 10을 찾아냄 </li>
 </ul>
 <h2 id="Binary-Search"><a href="#Binary-Search" class="headerlink" title="Binary Search"></a>Binary Search</h2><ul>
 <li>Binary search(이진 탐색)은 sort를 사용하여 li 내의 값들을 순서대로 정렬하고 이 중 mid 값을 찾아 target 값과 비교한다. 만약 target 값보다 mid가 작다면 start 지점을 mid보다 1만큼 높게, target 값보다 mid가 크다면 end를 mid보다 1만큼 낮게 주고 다시 값을 찾는 연산을 반복한다.</li>
 <li>linear search에 비해서 연산 속도가 비약적으로 빠르다는 장점을 갖는다.</li>
 </ul>
-<h1 id="Binary-Search-1"><a href="#Binary-Search-1" class="headerlink" title="Binary Search"></a>Binary Search</h1><img src="/2019/04/23/Python-Basic4/binary_search3.png" title="li value and target">
+<h2 id="Binary-Search-Example"><a href="#Binary-Search-Example" class="headerlink" title="Binary Search Example"></a>Binary Search Example</h2><hr>
+<img src="/2019/04/23/Python-Basic4/binary_search3.png" title="li value and target">
 <ul>
 <li>사전에 주어진 li 값과 target</li>
 </ul>
