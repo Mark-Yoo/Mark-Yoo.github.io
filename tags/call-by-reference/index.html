@@ -2,14 +2,14 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Category: First Class Function - Mark-Yoo&#39;s Frontend Life</title>
+<title>Tag: call by reference - Mark-Yoo&#39;s Frontend Life</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Mark-Yoo&#39;s Frontend Life">
-<meta property="og:url" content="http://Mark-Yoo.github.io/categories/My-Coding-Life/Python/First-Class-Function/index.html">
+<meta property="og:url" content="http://Mark-Yoo.github.io/tags/call-by-reference/index.html">
 <meta property="og:site_name" content="Mark-Yoo&#39;s Frontend Life">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://mark-yoo.github.io/images/og_image.png">
@@ -138,13 +138,8 @@
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/categories">Categories</a></li>
-            
-            <li><a href="/categories/My-Coding-Life/Python/">Python</a></li>
-            
-            <li><a href="/categories/My-Coding-Life/">My Coding Life</a></li>
-            
-            <li class="is-active"><a href="#" aria-current="page">First Class Function</a></li>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">call by reference</a></li>
         </ul>
         </nav>
     </div>
@@ -156,17 +151,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-22T09:28:26.000Z">2019-04-22</time>
+                <time class="level-item has-text-grey" datetime="2019-04-22T10:53:08.000Z">2019-04-22</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/First-Class-Function/">First Class Function</a>
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 172 words)
+                    2 minutes read (About 257 words)
                 </span>
                 
                 
@@ -175,27 +170,34 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/04/22/Python-Basic2/">Python Basic2</a>
+                <a class="has-link-black-ter" href="/2019/04/22/Python-Basic3/">Python Basic3</a>
             
         </h1>
         <div class="content">
-            <h1 id="First-Class-Function"><a href="#First-Class-Function" class="headerlink" title="First Class Function"></a>First Class Function</h1><h2 id="1-함수를-인자-argument-로-전달"><a href="#1-함수를-인자-argument-로-전달" class="headerlink" title="1. 함수를 인자(argument)로 전달"></a>1. 함수를 인자(argument)로 전달</h2><h2 id="2-함수를-리턴-return-값으로-전달"><a href="#2-함수를-리턴-return-값으로-전달" class="headerlink" title="2. 함수를 리턴(return) 값으로 전달"></a>2. 함수를 리턴(return) 값으로 전달</h2><h2 id="3-함수를-변수에-전달"><a href="#3-함수를-변수에-전달" class="headerlink" title="3. 함수를 변수에 전달"></a>3. 함수를 변수에 전달</h2><ul>
-<li>First-class-functions(함수우선순위) : 프로그래밍 언어 중 함수를 다른 변수와 동일하게 다루는 언어를 함수우선순위를 가졌다고 표현.(MDN web docs 출처)</li>
+            <h1 id="Call-by-reference-VS-Call-by-value"><a href="#Call-by-reference-VS-Call-by-value" class="headerlink" title="Call by reference VS Call by value"></a>Call by reference VS Call by value</h1><ul>
+<li>immutable object<ul>
+<li>함수 내부에서 값을 변경할 수 없음</li>
 </ul>
-<p>파이썬이 함수우선순위를 가졌는지 알아보기</p>
-<img src="/2019/04/22/Python-Basic2/firstClassFunction.png">
-<ol>
-<li>함수를 인자(argunent)로 전달</li>
-</ol>
-<img src="/2019/04/22/Python-Basic2/firstClassFunction2.png">
-<ol start="3">
-<li>함수를 변수에 전달</li>
-</ol>
-<img src="/2019/04/22/Python-Basic2/firstClassFunction3.png">
-<ol start="2">
-<li>함수를 리턴(return) 값으로 전달</li>
-</ol>
-<h2 id="3가지를-모두-만족시키는-파이썬은-함수우선순위를-가졌다고-할-수-있다"><a href="#3가지를-모두-만족시키는-파이썬은-함수우선순위를-가졌다고-할-수-있다" class="headerlink" title="3가지를 모두 만족시키는 파이썬은 함수우선순위를 가졌다고 할 수 있다."></a>3가지를 모두 만족시키는 파이썬은 함수우선순위를 가졌다고 할 수 있다.</h2>
+</li>
+<li><p>mutable object</p>
+<ul>
+<li>list, dictionary, set</li>
+<li>새로운 객체를 할당하는 게 아니라면</li>
+<li>함수 내부에서 값을 변경할 수 있음</li>
+</ul>
+</li>
+<li><p>만약 immutable object인 tuple 값을 바꿔야 한다면 tuple 내가 아닌 바깥 쪽에서 값을 받아오고 이를 return 함수를 이용해서 바꾸면 된다.</p>
+</li>
+</ul>
+<h2 id="Call-by-reference"><a href="#Call-by-reference" class="headerlink" title="Call by reference"></a>Call by reference</h2><ul>
+<li>call by reference 방식은 value의 주소를 복사해서 쓰는 방식으로 value의 값이 바뀌더라도 주소만 그대로라면 value 값의 변화를 받아올 수 있다. </li>
+<li>바깥으로의 접근과 수정이 가능</li>
+</ul>
+<h2 id="Call-by-value"><a href="#Call-by-value" class="headerlink" title="Call by value"></a>Call by value</h2><ul>
+<li>value 값을 ‘복사’ 해온는 방법. 실제로 보이는 값은 같아보이지만 독자적으로 그 복사값을 가지게 되므로, 원본 value 값이 바뀌더라도 변화가 없다.</li>
+<li>바깥으로의 접근이 불가</li>
+</ul>
+<h2 id="이-둘을-인자-전달-방식에-따른-함수-구분이라고-한다"><a href="#이-둘을-인자-전달-방식에-따른-함수-구분이라고-한다" class="headerlink" title="이 둘을 인자 전달 방식에 따른 함수 구분이라고 한다."></a>이 둘을 인자 전달 방식에 따른 함수 구분이라고 한다.</h2>
         </div>
         
         
