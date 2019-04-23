@@ -164,7 +164,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 254 words)
+                    3 minutes read (About 470 words)
                 </span>
                 
                 
@@ -185,8 +185,27 @@
 <li>Binary search(이진 탐색)은 sort를 사용하여 li 내의 값들을 순서대로 정렬하고 이 중 mid 값을 찾아 target 값과 비교한다. 만약 target 값보다 mid가 작다면 start 지점을 mid보다 1만큼 높게, target 값보다 mid가 크다면 end를 mid보다 1만큼 낮게 주고 다시 값을 찾는 연산을 반복한다.</li>
 <li>linear search에 비해서 연산 속도가 비약적으로 빠르다는 장점을 갖는다.</li>
 </ul>
-
-
+<h1 id="Binary-Search-1"><a href="#Binary-Search-1" class="headerlink" title="Binary Search"></a>Binary Search</h1><img src="/2019/04/23/Python-Basic4/binary_search3.png" title="li value and target">
+<ul>
+<li>사전에 주어진 li 값과 target</li>
+</ul>
+<img src="/2019/04/23/Python-Basic4/binary_search.png" title="binary search basic coding">
+<ul>
+<li>binary search 기본 코딩<ul>
+<li>sort를 사용하여 li를 순서대로 정렬</li>
+<li>start 값을 li의 0번째부터 시작</li>
+<li>end 값은 start가 0번쩨 값부터 시작하므로 li length -1</li>
+<li>start가 end보다 작거나 같을 경우 계속 search를 반복하는 while문을 사용</li>
+<li>mid 값은 start와 end를 더한 값의 절반 (이번의 경우 start = 0, end = 6에서 시작하게 되므로 처음 mid 값은 3)</li>
+<li>target이 mid의 값과 같을 경우 mid를 그대로 출력하는 return문</li>
+<li>target이 mid보다 작을 겅우, end를 mid보다 1 작게, target이 mid보다 클 경우, start 값을 mid보다 1 크게하여 다시 while문을 돌린다.</li>
+</ul>
+</li>
+</ul>
+<img src="/2019/04/23/Python-Basic4/binary_search2.png" title="result with li after binary search function activated">
+<ul>
+<li>결과적으로 li는 순차적으로 정렬되어있고, 이 중 5번째인 10의 위치를 표시한다.</li>
+</ul>
 
         </div>
         
@@ -449,7 +468,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        18
+                        19
                     </p>
                 </div>
             </div>
@@ -651,6 +670,25 @@
         
         <article class="media">
             
+            <a href="/2019/04/23/Python-Basic5/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python-Basic5">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T09:17:58.000Z">2019-04-23</time></div>
+                    <a href="/2019/04/23/Python-Basic5/" class="has-link-black-ter is-size-6">Python-Basic5</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/23/Python-Basic4/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic4">
@@ -725,25 +763,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/18/Computer-Science-beginner2/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science - beginner2">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-18T09:35:31.000Z">2019-04-18</time></div>
-                    <a href="/2019/04/18/Computer-Science-beginner2/" class="has-link-black-ter is-size-6">Computer Science - beginner2</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -762,7 +781,7 @@
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">9</span>
+                    <span class="level-item tag">10</span>
                 </span>
             </a>
         </li>
@@ -900,6 +919,25 @@
         
         <article class="media">
             
+            <a href="/2019/04/23/Python-Basic5/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python-Basic5">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T09:17:58.000Z">2019-04-23</time></div>
+                    <a href="/2019/04/23/Python-Basic5/" class="has-link-black-ter is-size-6">Python-Basic5</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/23/Python-Basic4/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic4">
@@ -974,25 +1012,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/18/Computer-Science-beginner2/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science - beginner2">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-18T09:35:31.000Z">2019-04-18</time></div>
-                    <a href="/2019/04/18/Computer-Science-beginner2/" class="has-link-black-ter is-size-6">Computer Science - beginner2</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1011,7 +1030,7 @@
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">9</span>
+                    <span class="level-item tag">10</span>
                 </span>
             </a>
         </li>
