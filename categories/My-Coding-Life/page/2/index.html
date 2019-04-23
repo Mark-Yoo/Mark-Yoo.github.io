@@ -2,14 +2,14 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Tag: Git - Mark-Yoo&#39;s Frontend Life</title>
+<title>Category: My Coding Life - Mark-Yoo&#39;s Frontend Life</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Mark-Yoo&#39;s Frontend Life">
-<meta property="og:url" content="http://Mark-Yoo.github.io/tags/Git/index.html">
+<meta property="og:url" content="http://Mark-Yoo.github.io/categories/My-Coding-Life/page/2/index.html">
 <meta property="og:site_name" content="Mark-Yoo&#39;s Frontend Life">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://mark-yoo.github.io/images/og_image.png">
@@ -138,8 +138,9 @@
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/tags">Tags</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Git</a></li>
+            <li><a href="/categories">Categories</a></li>
+            
+            <li class="is-active"><a href="#" aria-current="page">My Coding Life</a></li>
         </ul>
         </nav>
     </div>
@@ -151,17 +152,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-03-20T04:12:42.000Z">2019-03-20</time>
+                <time class="level-item has-text-grey" datetime="2019-03-15T08:47:57.000Z">2019-03-15</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Git/">Git</a>
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/JavaScript/">JavaScript</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 307 words)
+                    3 minutes read (About 406 words)
                 </span>
                 
                 
@@ -170,50 +171,43 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/03/20/Git-basic3/">Git basic3</a>
+                <a class="has-link-black-ter" href="/2019/03/15/How-to-make-random-number-generator/">How to make random number generator.</a>
             
         </h1>
         <div class="content">
-            <p>#Git으로 협업하기</p>
-<p>##git flow practice</p>
-<p>###index</p>
-<pre><code>- git init
-- git flow init
-- git flow feature start &apos;feature-name&apos;
-- git add README.md
-- git commit -m &quot;feat: add README-md&quot;
-- git flow feature finish &apos;feature-name
+            <h1 id="랜덤-번호-생성하기"><a href="#랜덤-번호-생성하기" class="headerlink" title="랜덤 번호 생성하기"></a>랜덤 번호 생성하기</h1><p>JavaScript를 이용해 일정범위의 숫자들을 무작위로 뽑아내는 랜덤 번호 생성기 만들기를 배웠다.<br>아직은 JavaScript를 이용하는데에 제대로 이해가 되지않아 여러번 코드를 다시봐야하지만,<br>그래도 하고싶었던 일에 도전한다는 것이 즐겁고 재미있다고 생각한다. 사실 즐겁고 재밌다고<br>생각한다는 것이 아직 내 노력이 부족한것이 아닐까라는 생각이 들어 좀 더 치열하게 공부해야겠다는<br>생각이 든다.</p>
+<p>오늘 배운 코드 정리</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    // 같은 코드를 총 5번 반복하기 위해 for 반복문을 이용
+        for(j=0;j&lt;5;j++) {
 
-브랜치에서 push 하지않고 merge(finish)하게 되면 feature가 사라짐
-push 하고 finish 하게 되면 기록이 다 남음(feature)가 남음.
+    // var 을 이용해 변수를 선언하고 original_numbers의 공간을 빈 공간으로 설정
+        var original_numbers = [];
 
-- git flow release start v0.0.1.00190320001
-- git flow release finish v0.0.1.00190320001
+    // 1부터 45사이의 숫자 범위를 정하기 위해 for 반복문을 이용해서 작성
+    // for 반복분은 초기식이 실행된 후에 다시 한번 조건을 비교할 때 사용
+        for(i=1;i&lt;45;i++) {
 
-
-v0.0.1.00190320001 = 버전 이름 붙이기 00 = 2000년대 
-                        19 = 2019년 
-                        03=3월 
-                        20=20일 
-                        001=버전 1
-v0.0.1.00190320001a = 알파버전
+    // push 명령을 통해 i 값을 출력
+            original_numbers.push(i);
+        }
 
 
-- 협업하기 - github fork 누르고 이동하는 곳에서 클론 이후에 master에서 git branch develop 만들기 -&gt; 
-            git pull origin devleop 해서 작업 시작 (master에서 끌어옴)
+    var numbers = []; //숫자를 담을 공간
 
-작업 이후 devlop으로 push. 그 이후 github에서 pull-request 버튼 클릭 그 이후 base:develop으로 설정. 
-master로 설정하면 바로 검증없이 live로 넘어가버리는 경우가 생김
+    // for문을 이용한 반복으로 6개의 랜덤한 숫자를 뽑아내고 6개의 랜덤한 숫자가 뽑혔을 경우 종료
+    for(i=0;i&lt;6;i++) {
+        var number_index = Math.floor((Math.random() * original_numbers.length));
+        var get_number = original_numbers[number_index];
+        numbers.push(get_number);
+        original_numbers.splice(number_index,1)
+    }
 
-- continous pull
-
-실시간으로 변하는 원본 레포를 반영하기 위해 한 번 pull request 한 뒤 
-git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 떠올 수 있다.
-
-    * git fetch rmorigin develop - 일단 받아둠
-    * git merge rmorigin/develop - 새로 받은 정보로 덮어씌우기
-    * git pull -u origin develop - push 하기 전에 한 번 더 최신화하기
-    * git push origin develop
+    //뽑힌 6개의 숫자들을 작은 숫자부터 큰 숫자 순서대로 나열하기
+    numbers.sort(function(a, b) {return a-b});
+    console.log(numbers);
+    }
+&lt;/script&gt;
 </code></pre>
         </div>
         
@@ -229,6 +223,25 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
 
 
 
+
+    
+<div class="card card-transparent">
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous">
+            <a class="is-flex-grow has-text-black-ter" href="/categories/My-Coding-Life/">Previous</a>
+        </div>
+        <div class="pagination-next is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/categories/My-Coding-Life/page/3/">Next</a>
+        </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link has-text-black-ter" href="/categories/My-Coding-Life/">1</a></li>
+            
+            <li><a class="pagination-link is-current" href="/categories/My-Coding-Life/page/2/">2</a></li>
+            
+        </ul>
+    </nav>
+</div>
 </div>
                 
 

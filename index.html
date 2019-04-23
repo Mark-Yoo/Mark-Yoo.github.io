@@ -141,6 +141,60 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-23T01:31:49.000Z">2019-04-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 254 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/23/Python-Basic4/">Python Basic4</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Binary-Search-이진-탐색-VS-Linear-Search-선형-탐색"><a href="#Binary-Search-이진-탐색-VS-Linear-Search-선형-탐색" class="headerlink" title="Binary Search (이진 탐색) VS. Linear Search (선형 탐색)"></a>Binary Search (이진 탐색) VS. Linear Search (선형 탐색)</h1><h2 id="Linear-Search"><a href="#Linear-Search" class="headerlink" title="Linear Search"></a>Linear Search</h2><ul>
+<li>Linear search(선형 탐색)은 li를 순차적을 0번부터 끝까지 탐색을 하면서 target 값을 찾아내는 방법이다.</li>
+<li>Linear search의 단점은 모든 자료를 처음부터 둘러봐야되는 점 때문에 자료의 양이 많아질수록 탐색 시간이 기하급수적으로 늘어난다.</li>
+</ul>
+<h2 id="Binary-Search"><a href="#Binary-Search" class="headerlink" title="Binary Search"></a>Binary Search</h2><ul>
+<li>Binary search(이진 탐색)은 sort를 사용하여 li 내의 값들을 순서대로 정렬하고 이 중 mid 값을 찾아 target 값과 비교한다. 만약 target 값보다 mid가 작다면 start 지점을 mid보다 1만큼 높게, target 값보다 mid가 크다면 end를 mid보다 1만큼 낮게 주고 다시 값을 찾는 연산을 반복한다.</li>
+<li>linear search에 비해서 연산 속도가 비약적으로 빠르다는 장점을 갖는다.</li>
+</ul>
+
+
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-04-22T10:53:08.000Z">2019-04-22</time>
                 
                 <div class="level-item">
@@ -838,90 +892,6 @@ position:sticky;
 
 
 
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-03-20T04:12:42.000Z">2019-03-20</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Git/">Git</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 307 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/03/20/Git-basic3/">Git basic3</a>
-            
-        </h1>
-        <div class="content">
-            <p>#Git으로 협업하기</p>
-<p>##git flow practice</p>
-<p>###index</p>
-<pre><code>- git init
-- git flow init
-- git flow feature start &apos;feature-name&apos;
-- git add README.md
-- git commit -m &quot;feat: add README-md&quot;
-- git flow feature finish &apos;feature-name
-
-브랜치에서 push 하지않고 merge(finish)하게 되면 feature가 사라짐
-push 하고 finish 하게 되면 기록이 다 남음(feature)가 남음.
-
-- git flow release start v0.0.1.00190320001
-- git flow release finish v0.0.1.00190320001
-
-
-v0.0.1.00190320001 = 버전 이름 붙이기 00 = 2000년대 
-                        19 = 2019년 
-                        03=3월 
-                        20=20일 
-                        001=버전 1
-v0.0.1.00190320001a = 알파버전
-
-
-- 협업하기 - github fork 누르고 이동하는 곳에서 클론 이후에 master에서 git branch develop 만들기 -&gt; 
-            git pull origin devleop 해서 작업 시작 (master에서 끌어옴)
-
-작업 이후 devlop으로 push. 그 이후 github에서 pull-request 버튼 클릭 그 이후 base:develop으로 설정. 
-master로 설정하면 바로 검증없이 live로 넘어가버리는 경우가 생김
-
-- continous pull
-
-실시간으로 변하는 원본 레포를 반영하기 위해 한 번 pull request 한 뒤 
-git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 떠올 수 있다.
-
-    * git fetch rmorigin develop - 일단 받아둠
-    * git merge rmorigin/develop - 새로 받은 정보로 덮어씌우기
-    * git pull -u origin develop - push 하기 전에 한 번 더 최신화하기
-    * git push origin develop
-</code></pre>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -984,7 +954,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        17
+                        18
                     </p>
                 </div>
             </div>
@@ -1004,7 +974,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        10
+                        12
                     </p>
                 </div>
             </div>
@@ -1107,7 +1077,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 <span class="level-item">My Coding Life</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">10</span>
+                <span class="level-item tag">11</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Computer-Science/">
@@ -1147,7 +1117,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 <span class="level-item">Python</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">3</span>
+                <span class="level-item tag">4</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Team-Project/">
@@ -1169,7 +1139,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Basic-Javascript/" style="font-size: 15px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 15px;">HTML, CSS</a> <a href="/tags/computer-science/" style="font-size: 15px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 15px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-basic/" style="font-size: 20px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
+        <a href="/tags/Basic-Javascript/" style="font-size: 15px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 15px;">HTML, CSS</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/computer-science/" style="font-size: 15px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 15px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/linear-search/" style="font-size: 10px;">linear search</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-basic/" style="font-size: 20px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
     </div>
 </div>
 
@@ -1183,6 +1153,25 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/04/23/Python-Basic4/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic4">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T01:31:49.000Z">2019-04-23</time></div>
+                    <a href="/2019/04/23/Python-Basic4/" class="has-link-black-ter is-size-6">Python Basic4</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1260,25 +1249,6 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/17/Computer-Sceicne-beginner/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Sceicne - beginner1">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-17T10:14:50.000Z">2019-04-17</time></div>
-                    <a href="/2019/04/17/Computer-Sceicne-beginner/" class="has-link-black-ter is-size-6">Computer Sceicne - beginner1</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1297,7 +1267,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">8</span>
+                    <span class="level-item tag">9</span>
                 </span>
             </a>
         </li>
@@ -1355,6 +1325,13 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/binary-search/">
+                        <span class="tag">binary search</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science/">
                         <span class="tag">computer science</span>
                         <span class="tag is-grey">2</span>
@@ -1376,16 +1353,23 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/linear-search/">
+                        <span class="tag">linear search</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/python/">
                         <span class="tag">python</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/python-basic/">
                         <span class="tag">python basic</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
@@ -1421,6 +1405,25 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
         
         <article class="media">
             
+            <a href="/2019/04/23/Python-Basic4/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic4">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T01:31:49.000Z">2019-04-23</time></div>
+                    <a href="/2019/04/23/Python-Basic4/" class="has-link-black-ter is-size-6">Python Basic4</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/22/Python-Basic3/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic3">
@@ -1495,25 +1498,6 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/17/Computer-Sceicne-beginner/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Sceicne - beginner1">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-17T10:14:50.000Z">2019-04-17</time></div>
-                    <a href="/2019/04/17/Computer-Sceicne-beginner/" class="has-link-black-ter is-size-6">Computer Sceicne - beginner1</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1532,7 +1516,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">8</span>
+                    <span class="level-item tag">9</span>
                 </span>
             </a>
         </li>
@@ -1590,6 +1574,13 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/binary-search/">
+                        <span class="tag">binary search</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science/">
                         <span class="tag">computer science</span>
                         <span class="tag is-grey">2</span>
@@ -1611,16 +1602,23 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/linear-search/">
+                        <span class="tag">linear search</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/python/">
                         <span class="tag">python</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/python-basic/">
                         <span class="tag">python basic</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
