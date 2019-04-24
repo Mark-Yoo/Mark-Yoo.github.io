@@ -152,6 +152,207 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-24T01:10:41.000Z">2019-04-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a few seconds read (About 70 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/24/Computer-Science-beginner5/">Computer Science beginner5</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="OOP"><a href="#OOP" class="headerlink" title="OOP"></a>OOP</h1><hr>
+<ol>
+<li>캡슐화(encapsulation): 정보 은닉을 포함</li>
+<li>정보은닉(information hiding)</li>
+<li>다형성(polymorphism): 상속(inheritance)<ul>
+<li>매서드 오버라이딩(method overriding) vs 함수 오버로딩(function overloading)</li>
+</ul>
+</li>
+<li>디자인 패턴(SOLID)<ul>
+<li>S : Single responsibility principle</li>
+<li>O : Open-closed principle</li>
+<li>L : Liskov substition principle</li>
+<li>I : Interface segregation principle</li>
+<li>D : dependency inversion principle</li>
+</ul>
+</li>
+</ol>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-24T00:57:06.000Z">2019-04-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 892 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/24/Computer-Science-beginner4/">Computer Science beginner4</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="OS"><a href="#OS" class="headerlink" title="OS"></a>OS</h1><hr>
+<ul>
+<li>Job scheduling -&gt; scheduler<ul>
+<li>context switching</li>
+</ul>
+</li>
+<li>process status(프로세스 상태)<ul>
+<li>process -&gt; thread –&gt; multithreading</li>
+</ul>
+</li>
+</ul>
+<h1 id="Concurrency-programming-동시성-프로그래밍"><a href="#Concurrency-programming-동시성-프로그래밍" class="headerlink" title="Concurrency programming (동시성 프로그래밍)"></a>Concurrency programming (동시성 프로그래밍)</h1><ul>
+<li>Multithreading<ul>
+<li>CPU-bound</li>
+<li>race-condition</li>
+<li>dead-lock</li>
+</ul>
+</li>
+<li>Asynchronous I/O<ul>
+<li>I/O bound</li>
+</ul>
+</li>
+</ul>
+<h2 id="Program-vs-Process"><a href="#Program-vs-Process" class="headerlink" title="Program vs Process"></a>Program vs Process</h2><hr>
+<ul>
+<li>Program(image) - 하드 디스크에 저장되어있는 ‘하나’의 이미지</li>
+<li>Process - 메인 메모리에 올라와서 실행을 시작한  프로그램</li>
+</ul>
+<h2 id="CPU-scheduling"><a href="#CPU-scheduling" class="headerlink" title="CPU scheduling"></a>CPU scheduling</h2><hr>
+<ul>
+<li>선점형 스케쥴링(Premtive scheduling) : 더 높은 우선순위의 프로세스가 발생하면 CPU의 점유율을 회수해서 우선순위가 높은 프로세스에 강제 할당 하는 방식<ul>
+<li>Priority algorithm : 우선 순위가 높은 순서대로 실행<ul>
+<li>우선순위가 다를 경우 채택</li>
+</ul>
+</li>
+<li>Round-robin algorithm : 우선순위를 따지지 않고 시간단위로 CPU를 할당해서 실행<ul>
+<li>프로세스가 선점 다중 작업 시스템에서 실행할 수 있는 시간대<ul>
+<li>time slice</li>
+<li>quantum</li>
+</ul>
+</li>
+<li>우선 순위가 같을 때 채택</li>
+<li>Priority가 너무 낮아서 실행 순서가 계속 밀릴 경우 starvation(기아 현상)이 생긴다. 이러한 starvation을 해결하기 위해 한 번씩 할당 된 프로세스가 끝날 때마다 낮은 우선순위의 프로세스에 aging을 통해서 priority를 점차 높여준다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>비선점형 스케쥴링(Non-premtive scheduling) : 프로세스가 자원을 할당 받았을 경우, 자원을 스스로 반납할 때까지 계속 그 자원을 사용하는 방식</li>
+</ul>
+<hr>
+<h2 id="Context-Switching-CPU의-레지스터에-저장되어-있는-값들을-바꾸는-방법"><a href="#Context-Switching-CPU의-레지스터에-저장되어-있는-값들을-바꾸는-방법" class="headerlink" title="Context Switching - CPU의 레지스터에 저장되어 있는 값들을 바꾸는 방법"></a>Context Switching - CPU의 레지스터에 저장되어 있는 값들을 바꾸는 방법</h2><ul>
+<li>eax와 ecx에 들어간 값이 ALU를 거쳐 연산을 마치고 다시 eax로 돌아오는 과정을 거친다.<ol>
+<li>mov eax, [a]</li>
+<li>mov ebx, [b]</li>
+<li>add eax, ecx  &lt;– eax = eax + ecx</li>
+<li>mov [c], eax</li>
+</ol>
+</li>
+<li>연산 과정 중 다른 연산이 실행될 경우 이전에 실행되던 연산의 값은 PCB(Program Control Block)에 저장된다. 이 값은 이 연산이 다시 시작 될 경우 CPU에 그 값들을 다시 불러올 때 사용된다.</li>
+</ul>
+<h3 id="Context-switching의-특징"><a href="#Context-switching의-특징" class="headerlink" title="Context switching의 특징"></a>Context switching의 특징</h3><hr>
+<ul>
+<li><p>많이 일어날수록 시스템에 과부하가 일어난다. (느리고 무거운 작업)</p>
+</li>
+<li><p>느리고 무겁지만 없앨 수 없는 과정. 시간을 너무 느리게 잡으면 멀티태스킹이 안됨, 반대로 너무 빠르게 잡으면 시스템이 과부하를 일으킴</p>
+</li>
+</ul>
+<h2 id="Process-vs-Thread"><a href="#Process-vs-Thread" class="headerlink" title="Process vs Thread"></a>Process vs Thread</h2><hr>
+<ul>
+<li>Process<ul>
+<li>실행 흐름<ul>
+<li>실행흐름 -&gt; 인스트럭션 실행 -&gt; 함수 실행 -&gt; stack frame</li>
+</ul>
+</li>
+<li>각 프로세스에 4G의 ram 공간을 할당 : 실제 공간이 아닌 VAS(virtual address space), 가짜 메모리를 할당</li>
+</ul>
+</li>
+<li>Thread<ul>
+<li>인스트럭션의 나열(기계어)</li>
+</ul>
+</li>
+</ul>
+<h2 id="Concurrency-programming-동시성-프로그래밍-1"><a href="#Concurrency-programming-동시성-프로그래밍-1" class="headerlink" title="Concurrency programming (동시성 프로그래밍)"></a>Concurrency programming (동시성 프로그래밍)</h2><ul>
+<li>multi-thread 같지만 실제로는 CPU가 하나이기 때문에 thread 하나가 도는 동안 다른 스레드에 휴지 상태가 된다.</li>
+</ul>
+<h2 id="Parallel-programming-병렬-프로그래밍"><a href="#Parallel-programming-병렬-프로그래밍" class="headerlink" title="Parallel programming (병렬 프로그래밍)"></a>Parallel programming (병렬 프로그래밍)</h2><ul>
+<li>single core multithreading : 코어가 하나라면 multi-thread와 single-thread와 속도가 비슷함</li>
+<li>multi core multithreading : 여러개의 코어가 각각 thread를 담당하므로 속도가 빨라짐 (race condition의 위험이 있음)<ul>
+<li>race condition : 둘 이상의 입력 또는 조작의 타이밍이나 순서 등이 결과값에 영향을 줄 수 있는 상태. 입력 변화의 상태나 타이밍이나 순서가 예상과 다르게 작동하면 정상적인 결과가 나오지 않게 될 위험이 따름 -&gt; 경쟁 위험</li>
+</ul>
+</li>
+</ul>
+<h2 id="multi-threading-vs-single-thread"><a href="#multi-threading-vs-single-thread" class="headerlink" title="multi-threading vs single-thread"></a>multi-threading vs single-thread</h2><ul>
+<li>multi-threading은 속도는 빠르나 복잡 : 디버깅이 어려움</li>
+<li>single-threading은 속도는 빠르지만 단순 : 디버깅이 쉬움</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-04-23T10:44:47.000Z">2019-04-23</time>
                 
                 <div class="level-item">
@@ -213,7 +414,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 53 words)
+                    a few seconds read (About 0 words)
                 </span>
                 
                 
@@ -226,12 +427,7 @@
             
         </h1>
         <div class="content">
-            <h1 id="Memory-Hierarchy-메모리-계층"><a href="#Memory-Hierarchy-메모리-계층" class="headerlink" title="Memory Hierarchy(메모리 계층)"></a>Memory Hierarchy(메모리 계층)</h1>
-<p>&lt;출처 By ComputerMemoryHierarchy.png: User:Danlash at en.wikipedia.org - ComputerMemoryHierarchy.png, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=9439275&gt;" target="_blank" rel="noopener">https://commons.wikimedia.org/w/index.php?curid=9439275&gt;</a></p>
-<ul>
-<li>메모리 계층은 위에서부터 가장 빠른 </li>
-</ul>
-
+            
         </div>
         
         
@@ -640,7 +836,7 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/04/17/Computer-Sceicne-beginner/">Computer Sceicne - beginner1</a>
+                <a class="has-link-black-ter" href="/2019/04/17/Computer-Science-beginner/">Computer Science - beginner1</a>
             
         </h1>
         <div class="content">
@@ -743,160 +939,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-02T03:09:26.000Z">2019-04-02</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/HTML-CSS/">HTML/CSS</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 102 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/02/2019-04-02TIL-HTML-CSS/">2019-04-02TIL-HTML/CSS</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="Basic-of-HTML-CSS-Symantic-Markup"><a href="#Basic-of-HTML-CSS-Symantic-Markup" class="headerlink" title="Basic of HTML/CSS Symantic Markup"></a>Basic of HTML/CSS Symantic Markup</h1><h2 id="“Cross-Browsing-is-the-most-Important-progress-”"><a href="#“Cross-Browsing-is-the-most-Important-progress-”" class="headerlink" title="“Cross Browsing is the most Important progress.”"></a>“Cross Browsing is the most Important progress.”</h2><p>Reset CSS</p>
-<ul>
-<li>HTML 마크업에 기본적으로 부여되는 margin, padding 등 값을 초기화하여 좀 더 직관적으로 CSS를 적용시킬 수 있도록 해주는 CSS 설정</li>
-</ul>
-<p>HTML 기초 사이트 시맨틱한 마크업 연습</p>
-<img src="/2019/04/02/2019-04-02TIL-HTML-CSS/header.png" title="header 예제">
-<p>예제에 대한 시맨틱한 마크업 예시</p>
-<pre><code>&lt;header&gt;
-    &lt;h1 class=&quot;logo&quot;&gt;
-        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
-    &lt;/h1&gt;
-    &lt;ul class=&quot;member&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;nav class=&quot;navigation&quot;&gt;
-        &lt;h2 class=&quot;readable-hidden&quot;&gt;메인메뉴&lt;/h2&gt;
-        &lt;ul class=&quot;menu&quot;&gt;
-        &lt;/ul&gt;
-    &lt;/nav&gt;
-&lt;/header&gt;
-</code></pre>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-01T11:21:59.000Z">2019-04-01</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/HTML-CSS/">HTML/CSS</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 1071 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/01/2019-04-01TIL-HTML-CSS/">2019-04-01TIL HTML/CSS</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="Basic-of-HTML-CSS-Symantic-Markup"><a href="#Basic-of-HTML-CSS-Symantic-Markup" class="headerlink" title="Basic of HTML/CSS Symantic Markup"></a>Basic of HTML/CSS Symantic Markup</h1><h2 id="“Cross-Browsing-is-the-most-Important-progress-”"><a href="#“Cross-Browsing-is-the-most-Important-progress-”" class="headerlink" title="“Cross Browsing is the most Important progress.”"></a>“Cross Browsing is the most Important progress.”</h2><ul>
-<li><p>SEO(Search Engine Optimization) : Build webpage/site following rules that search engine can understand, so that search engine can align and show this specific website on significant list</p>
-</li>
-<li><p>SEO(서치 엔진 최적화) : 웹페이지를 제작하는 과정에서 서치 엔진과 컴퓨터가 이해할 수 있는 마크업을 사용해서 특정 정보를 검색하는 과정에서 좀 더 상위 리스트에 노출 될 수 있도록 하는 과정.</p>
-</li>
-<li><p>Semantic Markup : Semantic markup has a close connection with SEO and UX. Semantic markup suppose to make most of the webpage users can expect similar experience through the same webpage. Word ‘users’ include the deaf, the blind, and even person with no handicap. Semantic markup is now an important issue since the world is heading for equal right from reality.</p>
-</li>
-<li><p>시맨틱 마크업 : 시맨틱 마크업이란 SEO, UX와도 밀접한 연관이 있는 개념이다. 이 개념은 대부분의 사람들이 같은 웹페이지에서 비슷한 경험을 할 수 있도록 해야 한다는 것에서 출발한다. ‘유저’라는 단어에는 청각 장애인, 시각 장애인, 나아가서는 장애가 없는 사람들까지 모두 포함되는데 시맨틱 마크업이라는 개념은 평등이라는 개념이 중요해진 현대시대에 맞춰 가장 먼저 발전하고 기준을 맞춰가야할 중요한 개념이 되었다.</p>
-</li>
-</ul>
-<h2 id="웹을-구성하는-세-가지-요소의-역할"><a href="#웹을-구성하는-세-가지-요소의-역할" class="headerlink" title="웹을 구성하는 세 가지 요소의 역할"></a>웹을 구성하는 세 가지 요소의 역할</h2><p>HTML : 튼튼한 신체</p>
-<p>CSS : 멋진 옷과 악세사리</p>
-<p>JavaScript : 명석한 두뇌</p>
-<p>HTML의 구조가 명확하게 정돈되지 않으면 UX에도 영향을 미친다.</p>
-<p>For example : one whole page</p>
-<pre><code>&lt;body&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        &lt;header class=&quot;header&quot;&gt;&lt;/header&gt;
-        &lt;div class=&quot;visual&quot;&gt;&lt;/div&gt;
-        &lt;main class=&quot;main&quot;&gt;&lt;/main&gt;
-        &lt;article class=&quot;slogan&quot;&gt;&lt;/article&gt;
-        &lt;footer class=&quot;footer&quot;&gt;&lt;/footer&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-</code></pre><p>기본적으로 어떤 형태의 페이지를 만들것인지 구상하고 기본적인 틀을 구성하는 것이 중요</p>
-<p>이전에는 div 형태로 ‘의미가 부여되지 않은 상태’로 구성되는 마크업 형태가 많았지만, 시맨틱 마크업의 중요성이 대두되면서 헤더 영역, 메인 영역 푸터 영역을 정의하는 태그가 권장되었다. header, main, footer 태그들은 본인들의 역할을 그대로 보여주는 태그들이다.</p>
-<pre><code>&lt;article&gt;과 &lt;section&gt;의 공통점
-</code></pre><p>article과 section은 모두 제목을 가져야한다는 공통점을 갖는다.</p>
-<pre><code>&lt;article&gt;과 &lt;section&gt;의 차이점
-</code></pre><p>article과 section은 혼용되어 사용되기도 하며, 그에 맞게 비슷한 역할을 하는 태그들이다. 굳이 의미의 차이를 두고 사용하는 경우는 적지만 작은 차이를 구분하여 사용하는 것은 중요하다.</p>
-<p>article 태그는 그 안에 가지는 정보가 그 자체로서도 충분히 의미를 가지는 내용들을 담을 때에 사용하는 것이 좋다. 예를 들어 뉴스의 내용과 같이 그 내용들이 별도로 발간되더라도 특별한 의미를 가진 내용들을 일컫는다. 그러므로 보통 article 태그 안에 또 다시 article 태그를 넣어 사용하는 일은 지양하는 것이 바람직하다.</p>
-<p>section 태그는 각 부분을 나누는 태그로 section 안에 다른 section을 넣어 사용하는 것도 가능하며, article에 비해서는 좀 더 유연한 사용법을 가진다.</p>
-<p>두 태그의 차이를 잘 이해하여 사용하는 것은 이 정보에 다양한 방법으로 접근하게 될 사용자들에게 전달될 정보의 중요도를 결정하는데에도 도움이 된다.</p>
-<pre><code>position:relative;
-position:absolute;
-position:fixed;
-position:sticky;
-각 positon 속성이 가지는 의미
-</code></pre><p>relative 는 노멀 플로우를 유지하면서 움직일 수 있게 변형이 가능하다. 보기에는 변화가 없지만 static 속성을 기본으로 갖는 요소의 속성을 바꿔준다.</p>
-<p>absolute 가장 가까운 곳에 위치한 static이 아닌 부모를 따라가는 속성을 갖는다. 만약 static이 아닌 부모가 없다면 본문 body를 기준으로 움직이기 때문에 움직이기 까다롭다.</p>
-<pre><code>inline 과 inline-block의 차이점
-</code></pre><ul>
-<li>inline 박스는 패딩값을 적용하면 다른 부분을 덮어씌움</li>
-<li>inline-block은 inline이지만 block처럼 width 값을 줄 수 있음.</li>
-</ul>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -959,7 +1001,7 @@ position:sticky;
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        20
+                        22
                     </p>
                 </div>
             </div>
@@ -979,7 +1021,7 @@ position:sticky;
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        16
                     </p>
                 </div>
             </div>
@@ -1082,7 +1124,7 @@ position:sticky;
                 <span class="level-item">My Coding Life</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">13</span>
+                <span class="level-item tag">15</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Computer-Science/">
@@ -1090,7 +1132,7 @@ position:sticky;
                 <span class="level-item">Computer Science</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">3</span>
+                <span class="level-item tag">5</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Git/">
@@ -1144,7 +1186,7 @@ position:sticky;
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Basic-Javascript/" style="font-size: 13.33px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 13.33px;">HTML, CSS</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/call-by-reference/" style="font-size: 10px;">call by reference</a> <a href="/tags/call-by-value/" style="font-size: 10px;">call by value</a> <a href="/tags/computer-science/" style="font-size: 16.67px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 16.67px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/linear-search/" style="font-size: 10px;">linear search</a> <a href="/tags/memory-hierarchy/" style="font-size: 13.33px;">memory hierarchy</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-basic/" style="font-size: 20px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
+        <a href="/tags/Basic-Javascript/" style="font-size: 15px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 15px;">HTML, CSS</a> <a href="/tags/OOP/" style="font-size: 10px;">OOP</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/call-by-reference/" style="font-size: 10px;">call by reference</a> <a href="/tags/call-by-value/" style="font-size: 10px;">call by value</a> <a href="/tags/computer-science/" style="font-size: 20px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 20px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/linear-search/" style="font-size: 10px;">linear search</a> <a href="/tags/memory-hierarchy/" style="font-size: 10px;">memory hierarchy</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-basic/" style="font-size: 20px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
     </div>
 </div>
 
@@ -1158,6 +1200,44 @@ position:sticky;
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/04/24/Computer-Science-beginner5/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner5">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-24T01:10:41.000Z">2019-04-24</time></div>
+                    <a href="/2019/04/24/Computer-Science-beginner5/" class="has-link-black-ter is-size-6">Computer Science beginner5</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/04/24/Computer-Science-beginner4/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner4">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-24T00:57:06.000Z">2019-04-24</time></div>
+                    <a href="/2019/04/24/Computer-Science-beginner4/" class="has-link-black-ter is-size-6">Computer Science beginner4</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1216,44 +1296,6 @@ position:sticky;
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/22/Python-Basic3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-22T10:53:08.000Z">2019-04-22</time></div>
-                    <a href="/2019/04/22/Python-Basic3/" class="has-link-black-ter is-size-6">Python Basic3</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/04/22/Python-Basic2/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic2">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-22T09:28:26.000Z">2019-04-22</time></div>
-                    <a href="/2019/04/22/Python-Basic2/" class="has-link-black-ter is-size-6">Python Basic2</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1272,7 +1314,7 @@ position:sticky;
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">11</span>
+                    <span class="level-item tag">13</span>
                 </span>
             </a>
         </li>
@@ -1330,6 +1372,13 @@ position:sticky;
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/OOP/">
+                        <span class="tag">OOP</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/binary-search/">
                         <span class="tag">binary search</span>
                         <span class="tag is-grey">1</span>
@@ -1353,14 +1402,14 @@ position:sticky;
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science/">
                         <span class="tag">computer science</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science-basic/">
                         <span class="tag">computer science basic</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
@@ -1381,7 +1430,7 @@ position:sticky;
                 <div class="control">
                     <a class="tags has-addons" href="/tags/memory-hierarchy/">
                         <span class="tag">memory hierarchy</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -1431,6 +1480,44 @@ position:sticky;
         
         <article class="media">
             
+            <a href="/2019/04/24/Computer-Science-beginner5/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner5">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-24T01:10:41.000Z">2019-04-24</time></div>
+                    <a href="/2019/04/24/Computer-Science-beginner5/" class="has-link-black-ter is-size-6">Computer Science beginner5</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/04/24/Computer-Science-beginner4/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner4">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-24T00:57:06.000Z">2019-04-24</time></div>
+                    <a href="/2019/04/24/Computer-Science-beginner4/" class="has-link-black-ter is-size-6">Computer Science beginner4</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/23/Computer-Science-beginner3/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science - beginner3">
@@ -1486,44 +1573,6 @@ position:sticky;
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/22/Python-Basic3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-22T10:53:08.000Z">2019-04-22</time></div>
-                    <a href="/2019/04/22/Python-Basic3/" class="has-link-black-ter is-size-6">Python Basic3</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/04/22/Python-Basic2/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic2">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-22T09:28:26.000Z">2019-04-22</time></div>
-                    <a href="/2019/04/22/Python-Basic2/" class="has-link-black-ter is-size-6">Python Basic2</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1542,7 +1591,7 @@ position:sticky;
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">11</span>
+                    <span class="level-item tag">13</span>
                 </span>
             </a>
         </li>
@@ -1600,6 +1649,13 @@ position:sticky;
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/OOP/">
+                        <span class="tag">OOP</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/binary-search/">
                         <span class="tag">binary search</span>
                         <span class="tag is-grey">1</span>
@@ -1623,14 +1679,14 @@ position:sticky;
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science/">
                         <span class="tag">computer science</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science-basic/">
                         <span class="tag">computer science basic</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
@@ -1651,7 +1707,7 @@ position:sticky;
                 <div class="control">
                     <a class="tags has-addons" href="/tags/memory-hierarchy/">
                         <span class="tag">memory hierarchy</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
