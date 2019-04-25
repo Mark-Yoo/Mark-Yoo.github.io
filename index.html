@@ -141,6 +141,101 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-25T01:06:17.000Z">2019-04-25</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 513 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/25/Computer-Science-beginner6/">Computer Science beginner6</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="NAT-Network-address-translation-vs-NAPT-Network-address-port-translation"><a href="#NAT-Network-address-translation-vs-NAPT-Network-address-port-translation" class="headerlink" title="NAT(Network address translation) vs NAPT(Network address port translation)"></a>NAT(Network address translation) vs NAPT(Network address port translation)</h1><hr>
+<h2 id="NAT"><a href="#NAT" class="headerlink" title="NAT"></a>NAT</h2><ul>
+<li>라우터가 가진 공인 IP 주소를 하나씩 할당해줌 (소수의 IP주소를 가지고 있으므로 그 수가 모자람)</li>
+</ul>
+<h2 id="NAPT"><a href="#NAPT" class="headerlink" title="NAPT"></a>NAPT</h2><ul>
+<li>라우터가 가진 하나의 공인 IP 주소를 각각 다른 포트로 테이블을 만들어 호스트에게 할당. (같은 IP라도 포트의 번호가 다름)</li>
+</ul>
+<h2 id="Server"><a href="#Server" class="headerlink" title="Server"></a>Server</h2><hr>
+<ul>
+<li>특정 컴퓨터의 특정 프로세스 : socket이 많음<ul>
+<li>port: socket에 부여된 숫자<ul>
+<li>well-known port</li>
+<li></li>
+</ul>
+</li>
+<li>socket<ul>
+<li>listening socket - 접속 요청할 때에 사용</li>
+<li>data socket : 접속 후에 사용</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="TCP-UDP"><a href="#TCP-UDP" class="headerlink" title="TCP / UDP"></a>TCP / UDP</h2><hr>
+<ul>
+<li>TCP :<ul>
+<li>신되로가 높음</li>
+<li>패킷 유실시 -&gt; 재전송</li>
+<li>부담이 큼 (패킷을 보낸후 클라이언트가 받았는지 확인을 받아야 함)</li>
+</ul>
+</li>
+<li>UDP :<ul>
+<li>신뢰도가 낮음</li>
+<li>패킷 유실시 -&gt; 재전송 하지 않음</li>
+<li>부담이 적고 빠름 (동영상, 게임, 유튜브 등에서 사용)</li>
+<li>데이터 일부가 손실될 가능성이 있음</li>
+</ul>
+</li>
+</ul>
+<h2 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h2><hr>
+<ul>
+<li>HTTP(Hyper Text Transfer Protocol)</li>
+<li>HTTPS- HTTP보다 보안이 더 강함</li>
+<li>FTP</li>
+<li>SMTP</li>
+<li>DNS(Domain Name System) - Server IP를 사람이 읽기 쉽게 바꿔주는 프로토콜. 역으로 client가 도메인 이름으로 찾으면 이를 IP 주소로 바꿔 서버로부터 정보를 받아옴.</li>
+</ul>
+<h2 id="컨텐트-협상"><a href="#컨텐트-협상" class="headerlink" title="컨텐트 협상"></a>컨텐트 협상</h2><hr>
+<ul>
+<li>컨텐트 협상: client가 요청을 보내면 다양한 버전을 가지고 있는 server가 어떤 버전을 보낼것인지 결정하는 일. client가 요청한 자료가 없을 경우 대체제로 어떤 것을 보낼것인지에 대한 협상<ul>
+<li>서버 주도 협상(server-driven) : 서버가 마음대로 정해서 대체제를 클라이언트에게 전달함</li>
+<li>에이전트 주도 협상(agent-driven) :<br>클라이언트가 요구한 자료가 서버에 없을 경우 클라이언트에게 다시 리퀘스트를 요구함. 이를 통해서 클라이언트가 요구하는 대체제를 보냄. (두 번의 요청과 응답이 필요 -&gt; 효율성이 올라감)</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-04-24T01:10:41.000Z">2019-04-24</time>
                 
                 <div class="level-item">
@@ -814,134 +909,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-17T10:14:50.000Z">2019-04-17</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 659 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/04/17/Computer-Science-beginner/">Computer Science - beginner1</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="Basic-of-the-computer-science"><a href="#Basic-of-the-computer-science" class="headerlink" title="Basic of the computer science"></a>Basic of the computer science</h1><h2 id="알고리즘-기초"><a href="#알고리즘-기초" class="headerlink" title="알고리즘 기초"></a>알고리즘 기초</h2><ol>
-<li><p>Memory 32bit / 64bit의 차이 - 메모리의 속도</p>
-<ul>
-<li>32bit와 64bit의 가장 큰 차이는 메모리의 속도</li>
-<li>CPU와 RAM 사이에 연결된 와이어의 갯수가 32개 62개의 차이에서 비롯된다.</li>
-<li>이 와이어를 통해서 0과 1값이 0v와 5v의 전압으로 신호가 되어 RAM과 CPU를 건너다니게 된다.</li>
-<li>32bit는 이론상 약 4Gigabyte의 정보량을 옮길 수 있고 이 때문에 그 이상의 아무리 큰 용량의 RAM을 사용하더라도 그 기능을 다 사용하지 못할 수 있다.</li>
-<li>64bit 컴퓨터라고해서 32bit의 프로그램을 사용하지 못하는 것은 아니다. 다만 64bit 컴퓨터 성능을 전부 활용하지 못하고 절반인 32bit만 사용할 뿐이다.</li>
-</ul>
-</li>
-<li><p>Memory Address</p>
-<ul>
-<li>32개의 자릿수, 2진수  /  32bit 컴퓨터</li>
-<li>64개의 자릿수, 2진수  /  64bit 컴퓨터</li>
-<li>메모리에서는 1바이트 하나당 메모리 주소값 하나를 할당해준다.</li>
-<li>1byte = 8bit</li>
-<li>32bit = 2^32</li>
-</ul>
-</li>
-<li><p>정수(integer) : 정수는 범위는 좁지만 정밀한 계산이 가능</p>
-<ul>
-<li>기수법 : 2진수, 10진수, 16진수<ul>
-<li>2진수 : 0 1 - 2개</li>
-<li>10진수 : 0 1 2 3 4 5 6 7 8 9 - 10개</li>
-<li>16진수 : 0 1 2 3 4 5 6 7 8 9 a b c d e f - 16개<ul>
-<li>16진수 알파벳의 2진수 표기법<ul>
-<li>a : 1010</li>
-<li>b : 1011</li>
-<li>c : 1100</li>
-<li>d : 1101</li>
-<li>e : 1110</li>
-<li>f : 1111</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>ex. 10진수 -&gt; 2진수 변환<ul>
-<li>37 = 32 + 4 + 1 = 2^5 + 2^2 + 2^0 = 100101</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>실수 : 범위는 넓지만 정밀도가 떨어짐</p>
-<ul>
-<li>변수로 0.01을 주고 for문을 이용해 100번 더하는 연산 예제를 만들면 결과값이 1이 아닌 1에 매우 근접한 1.0000000000000007이 나옴. </li>
-<li>더 복잡한 변수 0.015625라는 값을 100번 더하는 연산 예제에서는 1.5625라는 정확한 값을 도출해낸다.</li>
-<li>이해를 위해서는 ‘부동소수점’ 개념을 이해해야한다.<ul>
-<li>예시<ul>
-<li>123.456</li>
-<li>1.23456 * 10^2</li>
-<li>12.3456 * 10^1</li>
-<li>1234.56 * 10^-1</li>
-<li>12345.6 * 10^-2</li>
-</ul>
-</li>
-<li>소수점 위치가 앞이나 뒤로 떠다니듯 움직이므로 ‘부동소수점’이라고 칭함</li>
-</ul>
-</li>
-<li>부동소수점 설계중 담을 공간이 부족해서 누락되는 데이터들로 인해 실수는 완벽하고 치밀한 계산이 힘들어진다.</li>
-</ul>
-</li>
-</ol>
-<h2 id="CPU는-더하기-기능을-하는-Adder-가산기-만을-가지고-있다"><a href="#CPU는-더하기-기능을-하는-Adder-가산기-만을-가지고-있다" class="headerlink" title="CPU는 더하기 기능을 하는 Adder(가산기)만을 가지고 있다."></a>CPU는 더하기 기능을 하는 Adder(가산기)만을 가지고 있다.</h2><ul>
-<li>Adder만의 가지고 사칙연산을 모두 수행 </li>
-<li>메모리 구조<ul>
-<li>0 0000 000 (부호 지수부 가수부)</li>
-<li>맨 앞은 +,- 부호를 결정하는 자리 (0은 양수 1은 음수), 지수부는 exp값, 가수부는 man 값.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><ul>
-<li>Javascript is a … language.<ul>
-<li>Single-threaded</li>
-<li>Non-blocking</li>
-<li>Asynchronous</li>
-<li>Concurrent</li>
-</ul>
-</li>
-<li>자바스크립트는 모든 숫자가 Double로 들어간다 (8byte) -&gt; 무거움</li>
-<li>자바스크립트는 I/O bound 개념을 기초로 만들어짐. CPU-bound는 서버가 부담.</li>
-</ul>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -1006,7 +973,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        22
+                        23
                     </p>
                 </div>
             </div>
@@ -1208,6 +1175,25 @@
         
         <article class="media">
             
+            <a href="/2019/04/25/Computer-Science-beginner6/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner6">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-25T01:06:17.000Z">2019-04-25</time></div>
+                    <a href="/2019/04/25/Computer-Science-beginner6/" class="has-link-black-ter is-size-6">Computer Science beginner6</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/24/Computer-Science-beginner5/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner5">
@@ -1282,25 +1268,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/23/Python-Basic4/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T01:31:49.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Python-Basic4/" class="has-link-black-ter is-size-6">Python Basic4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1319,7 +1286,7 @@
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">13</span>
+                    <span class="level-item tag">14</span>
                 </span>
             </a>
         </li>
@@ -1485,6 +1452,25 @@
         
         <article class="media">
             
+            <a href="/2019/04/25/Computer-Science-beginner6/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner6">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-25T01:06:17.000Z">2019-04-25</time></div>
+                    <a href="/2019/04/25/Computer-Science-beginner6/" class="has-link-black-ter is-size-6">Computer Science beginner6</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/24/Computer-Science-beginner5/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner5">
@@ -1559,25 +1545,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/23/Python-Basic4/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T01:31:49.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Python-Basic4/" class="has-link-black-ter is-size-6">Python Basic4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1596,7 +1563,7 @@
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">13</span>
+                    <span class="level-item tag">14</span>
                 </span>
             </a>
         </li>
