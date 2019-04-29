@@ -152,6 +152,212 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-18T09:35:31.000Z">2019-04-18</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 356 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/18/Computer-Science-beginner2/">Computer Science - beginner2</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Basic-of-the-computer-science"><a href="#Basic-of-the-computer-science" class="headerlink" title="Basic of the computer science"></a>Basic of the computer science</h1><h2 id="엡실론-Epsilon"><a href="#엡실론-Epsilon" class="headerlink" title="엡실론 (Epsilon)"></a>엡실론 (Epsilon)</h2><ul>
+<li><p>실수에서의 엡실론은 1.0과 그 다음으로 표현 가능한 수(representable number)의 차이를 말함.</p>
+ <img src="/2019/04/18/Computer-Science-beginner2/epsilon.png" title="Epsilon from python3">
+</li>
+</ul>
+<ul>
+<li><p>파이썬은 float가 아닌 double이므로 가수부가 52비트 –&gt; 1.000—0000(0:52개) * 2^0</p>
+</li>
+<li><p>double에서 1.0 다음으로 표현 가능한 수(representable number)는 1.000—-0001(0:51개, 1:마지막 비트)* 2^0</p>
+</li>
+<li><p>두 수의 차이는 0.0000——0001(0:51개, 1:마지막 비트) * 2^0</p>
+<ul>
+<li>이 수를 10진수로 바꾸면 epsilon의 값이 나온다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="엡실론과-정밀도"><a href="#엡실론과-정밀도" class="headerlink" title="엡실론과 정밀도"></a>엡실론과 정밀도</h2><ul>
+<li>엡실론 사용법 예시</li>
+</ul>
+<img src="/2019/04/18/Computer-Science-beginner2/epsilon2.png" title="python3 epsilon example">
+<ul>
+<li><p>배정도의 실수 9.25는 부동소수점으로 표현하면 1.00101 * 2^3으로 바꿀 수 있다. 이 식에서 지수 부분을 떼어내어 엡실론을 곱하면 이 실수와 다음 표현 가능한 수 사이의 차이를 구할 수 있다.</p>
+<ul>
+<li>9.25 다음에 나올 수 있는 representable number 는 9.250000000000002 로 0.000000000000002 의 차이가 생긴다. 그 사이의 숫자를 표현하는데에는 정밀도가 떨어지게 된다.</li>
+</ul>
+</li>
+<li><p>정밀도가 떨어지는데에 대한 예시</p>
+</li>
+</ul>
+<img src="/2019/04/18/Computer-Science-beginner2/epsilon4.png" title="low on accuracy">
+<ul>
+<li>diff의 절반 값을 대입해서 다시 a 값에 더한 값 c는 그 값을 처음 더한 a 값과 같다고 인식한다. 인식할 수 있는 숫자보다 더 작은 숫자가 더해졌기 때문에 그 차이를 인식하지 못하는 것이다.</li>
+<li>이를 정밀도가 떨어진다고 말한다.</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-17T10:14:50.000Z">2019-04-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 659 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/17/Computer-Science-beginner/">Computer Science - beginner1</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Basic-of-the-computer-science"><a href="#Basic-of-the-computer-science" class="headerlink" title="Basic of the computer science"></a>Basic of the computer science</h1><h2 id="알고리즘-기초"><a href="#알고리즘-기초" class="headerlink" title="알고리즘 기초"></a>알고리즘 기초</h2><ol>
+<li><p>Memory 32bit / 64bit의 차이 - 메모리의 속도</p>
+<ul>
+<li>32bit와 64bit의 가장 큰 차이는 메모리의 속도</li>
+<li>CPU와 RAM 사이에 연결된 와이어의 갯수가 32개 62개의 차이에서 비롯된다.</li>
+<li>이 와이어를 통해서 0과 1값이 0v와 5v의 전압으로 신호가 되어 RAM과 CPU를 건너다니게 된다.</li>
+<li>32bit는 이론상 약 4Gigabyte의 정보량을 옮길 수 있고 이 때문에 그 이상의 아무리 큰 용량의 RAM을 사용하더라도 그 기능을 다 사용하지 못할 수 있다.</li>
+<li>64bit 컴퓨터라고해서 32bit의 프로그램을 사용하지 못하는 것은 아니다. 다만 64bit 컴퓨터 성능을 전부 활용하지 못하고 절반인 32bit만 사용할 뿐이다.</li>
+</ul>
+</li>
+<li><p>Memory Address</p>
+<ul>
+<li>32개의 자릿수, 2진수  /  32bit 컴퓨터</li>
+<li>64개의 자릿수, 2진수  /  64bit 컴퓨터</li>
+<li>메모리에서는 1바이트 하나당 메모리 주소값 하나를 할당해준다.</li>
+<li>1byte = 8bit</li>
+<li>32bit = 2^32</li>
+</ul>
+</li>
+<li><p>정수(integer) : 정수는 범위는 좁지만 정밀한 계산이 가능</p>
+<ul>
+<li>기수법 : 2진수, 10진수, 16진수<ul>
+<li>2진수 : 0 1 - 2개</li>
+<li>10진수 : 0 1 2 3 4 5 6 7 8 9 - 10개</li>
+<li>16진수 : 0 1 2 3 4 5 6 7 8 9 a b c d e f - 16개<ul>
+<li>16진수 알파벳의 2진수 표기법<ul>
+<li>a : 1010</li>
+<li>b : 1011</li>
+<li>c : 1100</li>
+<li>d : 1101</li>
+<li>e : 1110</li>
+<li>f : 1111</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ex. 10진수 -&gt; 2진수 변환<ul>
+<li>37 = 32 + 4 + 1 = 2^5 + 2^2 + 2^0 = 100101</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>실수 : 범위는 넓지만 정밀도가 떨어짐</p>
+<ul>
+<li>변수로 0.01을 주고 for문을 이용해 100번 더하는 연산 예제를 만들면 결과값이 1이 아닌 1에 매우 근접한 1.0000000000000007이 나옴. </li>
+<li>더 복잡한 변수 0.015625라는 값을 100번 더하는 연산 예제에서는 1.5625라는 정확한 값을 도출해낸다.</li>
+<li>이해를 위해서는 ‘부동소수점’ 개념을 이해해야한다.<ul>
+<li>예시<ul>
+<li>123.456</li>
+<li>1.23456 * 10^2</li>
+<li>12.3456 * 10^1</li>
+<li>1234.56 * 10^-1</li>
+<li>12345.6 * 10^-2</li>
+</ul>
+</li>
+<li>소수점 위치가 앞이나 뒤로 떠다니듯 움직이므로 ‘부동소수점’이라고 칭함</li>
+</ul>
+</li>
+<li>부동소수점 설계중 담을 공간이 부족해서 누락되는 데이터들로 인해 실수는 완벽하고 치밀한 계산이 힘들어진다.</li>
+</ul>
+</li>
+</ol>
+<h2 id="CPU는-더하기-기능을-하는-Adder-가산기-만을-가지고-있다"><a href="#CPU는-더하기-기능을-하는-Adder-가산기-만을-가지고-있다" class="headerlink" title="CPU는 더하기 기능을 하는 Adder(가산기)만을 가지고 있다."></a>CPU는 더하기 기능을 하는 Adder(가산기)만을 가지고 있다.</h2><ul>
+<li>Adder만의 가지고 사칙연산을 모두 수행 </li>
+<li>메모리 구조<ul>
+<li>0 0000 000 (부호 지수부 가수부)</li>
+<li>맨 앞은 +,- 부호를 결정하는 자리 (0은 양수 1은 음수), 지수부는 exp값, 가수부는 man 값.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><ul>
+<li>Javascript is a … language.<ul>
+<li>Single-threaded</li>
+<li>Non-blocking</li>
+<li>Asynchronous</li>
+<li>Concurrent</li>
+</ul>
+</li>
+<li>자바스크립트는 모든 숫자가 Double로 들어간다 (8byte) -&gt; 무거움</li>
+<li>자바스크립트는 I/O bound 개념을 기초로 만들어짐. CPU-bound는 서버가 부담.</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-04-02T03:09:26.000Z">2019-04-02</time>
                 
                 <div class="level-item">
@@ -582,7 +788,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        23
+                        25
                     </p>
                 </div>
             </div>
@@ -602,7 +808,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        16
+                        18
                     </p>
                 </div>
             </div>
@@ -705,7 +911,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 <span class="level-item">My Coding Life</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">15</span>
+                <span class="level-item tag">17</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Computer-Science/">
@@ -713,7 +919,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 <span class="level-item">Computer Science</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">5</span>
+                <span class="level-item tag">6</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Git/">
@@ -737,7 +943,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 <span class="level-item">JavaScript</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Python/">
@@ -767,7 +973,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Basic-Javascript/" style="font-size: 15px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 15px;">HTML, CSS</a> <a href="/tags/OOP/" style="font-size: 10px;">OOP</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/call-by-reference/" style="font-size: 10px;">call by reference</a> <a href="/tags/call-by-value/" style="font-size: 10px;">call by value</a> <a href="/tags/computer-science/" style="font-size: 20px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 20px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/linear-search/" style="font-size: 10px;">linear search</a> <a href="/tags/memory-hierarchy/" style="font-size: 10px;">memory hierarchy</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-basic/" style="font-size: 20px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
+        <a href="/tags/Basic-JavaScript/" style="font-size: 10px;">Basic JavaScript</a> <a href="/tags/Basic-Javascript/" style="font-size: 13.33px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 13.33px;">HTML, CSS</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/OOP/" style="font-size: 10px;">OOP</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/call-by-reference/" style="font-size: 10px;">call by reference</a> <a href="/tags/call-by-value/" style="font-size: 10px;">call by value</a> <a href="/tags/computer-science/" style="font-size: 20px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 20px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/linear-search/" style="font-size: 10px;">linear search</a> <a href="/tags/memory-hierarchy/" style="font-size: 10px;">memory hierarchy</a> <a href="/tags/python/" style="font-size: 16.67px;">python</a> <a href="/tags/python-basic/" style="font-size: 16.67px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
     </div>
 </div>
 
@@ -784,6 +990,44 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
         
         <article class="media">
             
+            <a href="/2019/04/29/Javascript1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Javascript1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-29T09:08:55.000Z">2019-04-29</time></div>
+                    <a href="/2019/04/29/Javascript1/" class="has-link-black-ter is-size-6">Javascript1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/JavaScript/">JavaScript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/04/26/Computer-Science-beginner7/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science-beginner7">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-26T01:35:33.000Z">2019-04-26</time></div>
+                    <a href="/2019/04/26/Computer-Science-beginner7/" class="has-link-black-ter is-size-6">Computer Science-beginner7</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/25/Computer-Science-beginner6/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner6">
@@ -795,7 +1039,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-25T01:06:17.000Z">2019-04-25</time></div>
                     <a href="/2019/04/25/Computer-Science-beginner6/" class="has-link-black-ter is-size-6">Computer Science beginner6</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
                     </p>
                 </div>
             </div>
@@ -839,44 +1083,6 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/23/Computer-Science-beginner3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science - beginner3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T10:44:47.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Computer-Science-beginner3/" class="has-link-black-ter is-size-6">Computer Science - beginner3</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/04/23/Python-Basic5/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic5">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T09:17:58.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Python-Basic5/" class="has-link-black-ter is-size-6">Python Basic5</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -895,7 +1101,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">14</span>
+                    <span class="level-item tag">16</span>
                 </span>
             </a>
         </li>
@@ -925,6 +1131,13 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Basic-JavaScript/">
+                        <span class="tag">Basic JavaScript</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/Basic-Javascript/">
                         <span class="tag">Basic Javascript</span>
                         <span class="tag is-grey">2</span>
@@ -949,6 +1162,13 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                     <a class="tags has-addons" href="/tags/HTML-CSS/">
                         <span class="tag">HTML, CSS</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JavaScript/">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -983,14 +1203,14 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science/">
                         <span class="tag">computer science</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science-basic/">
                         <span class="tag">computer science basic</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
@@ -1061,6 +1281,44 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
         
         <article class="media">
             
+            <a href="/2019/04/29/Javascript1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Javascript1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-29T09:08:55.000Z">2019-04-29</time></div>
+                    <a href="/2019/04/29/Javascript1/" class="has-link-black-ter is-size-6">Javascript1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/JavaScript/">JavaScript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/04/26/Computer-Science-beginner7/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science-beginner7">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-26T01:35:33.000Z">2019-04-26</time></div>
+                    <a href="/2019/04/26/Computer-Science-beginner7/" class="has-link-black-ter is-size-6">Computer Science-beginner7</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/25/Computer-Science-beginner6/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner6">
@@ -1072,7 +1330,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-25T01:06:17.000Z">2019-04-25</time></div>
                     <a href="/2019/04/25/Computer-Science-beginner6/" class="has-link-black-ter is-size-6">Computer Science beginner6</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
                     </p>
                 </div>
             </div>
@@ -1116,44 +1374,6 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/23/Computer-Science-beginner3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science - beginner3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T10:44:47.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Computer-Science-beginner3/" class="has-link-black-ter is-size-6">Computer Science - beginner3</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/04/23/Python-Basic5/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic5">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T09:17:58.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Python-Basic5/" class="has-link-black-ter is-size-6">Python Basic5</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1172,7 +1392,7 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">14</span>
+                    <span class="level-item tag">16</span>
                 </span>
             </a>
         </li>
@@ -1202,6 +1422,13 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Basic-JavaScript/">
+                        <span class="tag">Basic JavaScript</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/Basic-Javascript/">
                         <span class="tag">Basic Javascript</span>
                         <span class="tag is-grey">2</span>
@@ -1226,6 +1453,13 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                     <a class="tags has-addons" href="/tags/HTML-CSS/">
                         <span class="tag">HTML, CSS</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JavaScript/">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -1260,14 +1494,14 @@ git remote add rmorigin --주소-- 하면 새롭게 바뀌는 pm의 레포를 �
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science/">
                         <span class="tag">computer science</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science-basic/">
                         <span class="tag">computer science basic</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 

@@ -2,14 +2,14 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Tag: Basic Javascript - Mark-Yoo&#39;s Frontend Life</title>
+<title>Tag: Basic JavaScript - Mark-Yoo&#39;s Frontend Life</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Mark-Yoo&#39;s Frontend Life">
-<meta property="og:url" content="http://Mark-Yoo.github.io/tags/Basic-Javascript/index.html">
+<meta property="og:url" content="http://Mark-Yoo.github.io/tags/Basic-JavaScript/index.html">
 <meta property="og:site_name" content="Mark-Yoo&#39;s Frontend Life">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://mark-yoo.github.io/images/og_image.png">
@@ -139,7 +139,7 @@
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
             <li><a href="/tags">Tags</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Basic Javascript</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Basic JavaScript</a></li>
         </ul>
         </nav>
     </div>
@@ -151,105 +151,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-03-19T04:15:37.000Z">2019-03-19</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 297 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/03/19/Storage-basic/">Storage basic</a>
-            
-        </h1>
-        <div class="content">
-            <p>3월 19일 화요일</p>
-<p>오늘 배운 것<br>storage basic</p>
-<pre><code>Web Storage
-쿠키의 단점을 보완하기 위해 나온 저장소
-Server Session, Client Cookie
-
-localStorage :
-sessionStorage :
-
-저장할 데이터에 대한 키(key)값
-불러올 때는 저장할 때 사용한 키(key) 값을 이용해 불러온다. - getItem
-
-jqeury .serialize - form 안에 있어야 읽을 수 있음
-
-var key - 두 부분을 구분해서 더 구별하기 쉽게하기 위해서 두 곳에 다 변수를 선언하고 표시한다
-var data
-</code></pre><hr>
-<pre><code>&lt;form id=&quot;content_form&quot;&gt;
-    &lt;input type=&quot;text&quot; name=&quot;content1&quot; id=&quot;content1&quot;&gt;
-    &lt;input type=&quot;text&quot; name=&quot;content2&quot; id=&quot;content2&quot;&gt;
-    &lt;input type=&quot;text&quot; name=&quot;content3&quot; id=&quot;content3&quot;&gt;
-    &lt;input type=&quot;text&quot; name=&quot;content&quot; id=&quot;content&quot;&gt;
-    &lt;button id=&quot;btn_save&quot;&gt;Save&lt;/button&gt;
-    &lt;button id=&quot;btn_load&quot;&gt;Load&lt;/button&gt;
-&lt;/form&gt;
-
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-
-        // 변수로 storage_key의 값을 선언 (form의 id)
-        // local storage로 저장을 위한 식
-        var storage_key = &quot;content&quot;;
-        $(function() {
-            $(&apos;#btn_save&apos;).click(function() {
-                // 폼 데이터를 문자열로 합치기
-                var form_content = $(&apos;#content_form&apos;).serialize();
-
-                // 합친 문자열을 localStorage에 저장
-                localStorage.setItem(storage_key, form_content);
-
-                //폼 submit이 일어나지 않게
-                return false;
-            });
-
-        // local storage에 저장된 정보를 다시 불러오는 식
-        $(&apos;#btn_load&apos;).click(function() {
-            form_content = localStorage.getItem(storage_key);
-
-            // 각 정보들 사이가 &amp;로 연결되어 저장되는데 이를 split을 이용해서 분리, 각 항에 다시 표시한다.
-            var split_data = form_content.split(&quot;&amp;&quot;);
-            for ( var i in split_data) {
-                var content_data = split_data[i].split(&quot;=&quot;);
-                var key = content_data[0];
-                var data = content_data[1];
-                $(&apos;#&apos;+key).val(data);
-            }
-            return false;
-&lt;/script&gt;
-</code></pre>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-03-15T08:47:57.000Z">2019-03-15</time>
+                <time class="level-item has-text-grey" datetime="2019-04-29T09:08:55.000Z">2019-04-29</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/My-Coding-Life/JavaScript/">JavaScript</a>
@@ -259,7 +161,7 @@ var data
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 406 words)
+                    10 minutes read (About 1526 words)
                 </span>
                 
                 
@@ -268,44 +170,69 @@ var data
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/03/15/How-to-make-random-number-generator/">How to make random number generator.</a>
+                <a class="has-link-black-ter" href="/2019/04/29/Javascript1/">Javascript1</a>
             
         </h1>
         <div class="content">
-            <h1 id="랜덤-번호-생성하기"><a href="#랜덤-번호-생성하기" class="headerlink" title="랜덤 번호 생성하기"></a>랜덤 번호 생성하기</h1><p>JavaScript를 이용해 일정범위의 숫자들을 무작위로 뽑아내는 랜덤 번호 생성기 만들기를 배웠다.<br>아직은 JavaScript를 이용하는데에 제대로 이해가 되지않아 여러번 코드를 다시봐야하지만,<br>그래도 하고싶었던 일에 도전한다는 것이 즐겁고 재미있다고 생각한다. 사실 즐겁고 재밌다고<br>생각한다는 것이 아직 내 노력이 부족한것이 아닐까라는 생각이 들어 좀 더 치열하게 공부해야겠다는<br>생각이 든다.</p>
-<p>오늘 배운 코드 정리</p>
-<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
-    // 같은 코드를 총 5번 반복하기 위해 for 반복문을 이용
-        for(j=0;j&lt;5;j++) {
+            <h1 id="프로그래밍이란"><a href="#프로그래밍이란" class="headerlink" title="프로그래밍이란?"></a>프로그래밍이란?</h1><ul>
+<li>해야할 일들의 순서</li>
+<li>목적은 문제의 해결</li>
+<li>프로그래밍 언어마다 순서가 달라짐</li>
+<li>html은 tag와 attribute가 만들어져있어서 선언형 프로그래밍 언어로 구분하는 경우가 있다. (이미 정해진 tag와 attribute 이외의 것은 받아들이지 않는다.)</li>
+<li>JS는 프로그래밍 언어 : 프로그래밍 언어는 개발자가 컴퓨터에게 하는 명령을 문서로 작성한 것. 컴퓨터와 커뮤니케이션을 하기 위한 언어. 자연어는 아닌 인공어.</li>
+<li><p>컴퓨터가 내 말을 어떻게 인식할 것인지에 대해서 항상 생각할 것.</p>
+</li>
+<li><p>최근에는 사람이 잘 읽을 수 있는 코드를 만드는 사람이 코드를 잘 만드는 사람이 코딩을 잘하는 것.</p>
+</li>
+<li>변수와 반복문은 악 = for문을 최대한 지양해야한다.</li>
+<li><p>javasciprt: 인터프리터 언어(인간의 말을 컴퓨턱 알아들을 수 있게 변환을 도와줌) - 태생적으로 javascript는 느렸다. 하지만 google의 v8 엔진 이후로 비약적으로 빨라졌다.</p>
+</li>
+<li><p>대부분의 프로그래밍 언어는 변수와 값, 키워드, 연산자, 표현식, 조건문과 반복문에 의한 흐름제어, 문, 문의 집합인 함수 그리고 객체, 배열 등의 자료구조와 같은 문법을 제공 (기본 개념이 같으므로 한 언어를 잘 배워놓으면 다른 언어의 학습에도 쓸 수 있다.)</p>
+</li>
+</ul>
+<h2 id="자바스크립트의-탄생"><a href="#자바스크립트의-탄생" class="headerlink" title="자바스크립트의 탄생"></a>자바스크립트의 탄생</h2><ul>
+<li>브랜던 아이크가 개발한 언어</li>
+<li>Mocha -&gt; Livescript -&gt; Javascript</li>
+<li>마이크로소프트가 등장하면서 익스플로러를 보급하고 그러면서 넷스케이프에서 사용하는 JavaScript가 아닌 Jscript라는 비슷하지만 다른 언어를 만들어냄.</li>
+<li>결국 크로스 브라우징 이슈를 야기시킴.</li>
+</ul>
+<h2 id="자바스크립트의-파편화와-표준화"><a href="#자바스크립트의-파편화와-표준화" class="headerlink" title="자바스크립트의 파편화와 표준화"></a>자바스크립트의 파편화와 표준화</h2><ul>
+<li>향후에 생길 수 있는 크로스 브라우징 이슈를 해결하기 위해서 넷스케이프 쪽에서 마이크로소프트에 제안. ECMAScript(표준안)의 탄생. Javascript와 완전히 동일하지는 않음.</li>
+<li>ES5는 flash의 사장과 함께 떠올랐다. 영상 삽입 등의 기능이 불가능했떤 HTML4가 이를 계기로 HTML5에 영상 삽입 등의 기능을 지원허기 시작함.</li>
+<li>Javascirpt의 위상이 높아지면서 범용소프트웨어를 제작할 수 있는 범용언어가 되어가고 있다.</li>
+<li>Ajax(Asynchronous JavaScript and XML) : 마이크로소프트에서 탄생. 구글에서 이를 이용해서 google maps를 만듦. 웹 어플리케이션의 가능성을 찾음. </li>
+</ul>
+<h2 id="JavaScript-성장의-역사"><a href="#JavaScript-성장의-역사" class="headerlink" title="JavaScript 성장의 역사"></a>JavaScript 성장의 역사</h2><ul>
+<li>jQuery 크로스 브라우징을 기본적으로 지원한다. Javascript의 어려운 문법을 간단하게 바꿔준다.</li>
+<li>하지만 큰 문제점이 존재 : 향후 추가 예정</li>
+<li>브라우저에서만 동작하던 V8 엔진을 빼서 그대로 만든 것이 node.js -&gt; javascript로 브라우저 환경 뿐만이 아닌 오프라인 환경에서도 사용가능한 앱을 제작할 수 있는 세상이 열림.</li>
+<li>다양한 일들을 할 수 있지만 인터프리터 언어라는 특성상 다른 언어들에 비해서 약간 느림.</li>
+</ul>
+<h2 id="Javascript와-ECMAScript의-차이"><a href="#Javascript와-ECMAScript의-차이" class="headerlink" title="Javascript와 ECMAScript의 차이"></a>Javascript와 ECMAScript의 차이</h2><ul>
+<li>모든 언어들은 API를 지원함 -&gt; 이를 사용해서 코딩을 하게 되어있음.</li>
+<li>ECMAScript와 클라이언트 사이드 Web API(브라우저 제조사에서 만듦)를 전부 포함해서 Javascript라고 부른다.</li>
+<li>Javascript를 실행할 수 있는 환경은 두 가지 -&gt; 브라우저(개발자 모드의 콘솔 창, html에 script를 추가하고 라이브 서버), Node.js<ul>
+<li>브라우저 : ES + Web API (가장 기본적인 역할은 html과 css를 해석해서 렌더링 하는 것. Web API는 클라이언트 환경에서만 구동한다. 보안을 이유로 컴퓨터 안에 접근하는 것을 불허함)</li>
+<li>Node.js : V8 엔진을 기반으로 ES + Node.js API (클라이언트에게서 온 레퀘스트에 리스폰스 하는 것이 주요한 기능이므로 Web API는 필요하지 않음. 브라우저 환경에 기반해서 만든 코드가 작동하지 않는 이유. 내 서버에서 작동하므로 파일에 접근하는 권한들이 부여됨.)</li>
+<li>양쪽에서 중요하게 작동하는 ECMAScript를 Core라고 부름. 제일 먼저 익히고 배워야 함. 그 이후에 Web API를 배워야 함. V8엔진은 ES만을 가지고 있고 Web API는 각 브라우저에서 가지고 있음.</li>
+</ul>
+</li>
+</ul>
+<h2 id="자바스크립트의-특징"><a href="#자바스크립트의-특징" class="headerlink" title="자바스크립트의 특징"></a>자바스크립트의 특징</h2><ul>
+<li>인터프리터 언어. 컴파일은 하지만 실행파일을 만들지 않으므로 컴파일 언어라는 말은 맞지 않는다.</li>
+<li>명령형(imperative), 함수형(functional), 프로토타입 기반(prototype-based), 객체지향 프로그래밍을 지원하는 멀티 패러다임형 프로그래밍 언어이다.<ul>
+<li>객체지향 프로그래밍이란 클래스로 쪼개어놓고 객체라는 것들이 서로 상호작용을 하면서 실행을 함 (매우 복잡한 방식) -&gt; 함수형으로 회귀하자는 움직임이 있음</li>
+<li>대부분의 언어는 이 중 하나만을 제공하지만 javascript는 모두를 제공한다. 결국 효율성과 장단점을 구분하고 사용해야 하는건 프로그래머의 몫이 된다.</li>
+</ul>
+</li>
+<li>패러다임에 대한 심도깊은 이해가 필요함 : 결국 모두 알아야 함</li>
+</ul>
+<h2 id="ES6-브라우저-지원-현황"><a href="#ES6-브라우저-지원-현황" class="headerlink" title="ES6 브라우저 지원 현황"></a>ES6 브라우저 지원 현황</h2><ul>
+<li>ES6가 현재 모든 브라우저에서 지원하는 것은 아님</li>
+<li>하지만 Angular나 React는 ES6 기준으로 만들어져 있음</li>
+<li>ES6를 하위 버전으로 바꿔주는 babel이라는 프레임워크가 존재함.</li>
+</ul>
 
-    // var 을 이용해 변수를 선언하고 original_numbers의 공간을 빈 공간으로 설정
-        var original_numbers = [];
-
-    // 1부터 45사이의 숫자 범위를 정하기 위해 for 반복문을 이용해서 작성
-    // for 반복분은 초기식이 실행된 후에 다시 한번 조건을 비교할 때 사용
-        for(i=1;i&lt;45;i++) {
-
-    // push 명령을 통해 i 값을 출력
-            original_numbers.push(i);
-        }
-
-
-    var numbers = []; //숫자를 담을 공간
-
-    // for문을 이용한 반복으로 6개의 랜덤한 숫자를 뽑아내고 6개의 랜덤한 숫자가 뽑혔을 경우 종료
-    for(i=0;i&lt;6;i++) {
-        var number_index = Math.floor((Math.random() * original_numbers.length));
-        var get_number = original_numbers[number_index];
-        numbers.push(get_number);
-        original_numbers.splice(number_index,1)
-    }
-
-    //뽑힌 6개의 숫자들을 작은 숫자부터 큰 숫자 순서대로 나열하기
-    numbers.sort(function(a, b) {return a-b});
-    console.log(numbers);
-    }
-&lt;/script&gt;
-</code></pre>
         </div>
         
         
@@ -363,7 +290,7 @@ var data
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        23
+                        25
                     </p>
                 </div>
             </div>
@@ -383,7 +310,7 @@ var data
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        16
+                        18
                     </p>
                 </div>
             </div>
@@ -486,7 +413,7 @@ var data
                 <span class="level-item">My Coding Life</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">15</span>
+                <span class="level-item tag">17</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Computer-Science/">
@@ -494,7 +421,7 @@ var data
                 <span class="level-item">Computer Science</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">5</span>
+                <span class="level-item tag">6</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Git/">
@@ -518,7 +445,7 @@ var data
                 <span class="level-item">JavaScript</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/My-Coding-Life/Python/">
@@ -548,7 +475,7 @@ var data
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Basic-Javascript/" style="font-size: 15px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 15px;">HTML, CSS</a> <a href="/tags/OOP/" style="font-size: 10px;">OOP</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/call-by-reference/" style="font-size: 10px;">call by reference</a> <a href="/tags/call-by-value/" style="font-size: 10px;">call by value</a> <a href="/tags/computer-science/" style="font-size: 20px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 20px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/linear-search/" style="font-size: 10px;">linear search</a> <a href="/tags/memory-hierarchy/" style="font-size: 10px;">memory hierarchy</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/python-basic/" style="font-size: 20px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
+        <a href="/tags/Basic-JavaScript/" style="font-size: 10px;">Basic JavaScript</a> <a href="/tags/Basic-Javascript/" style="font-size: 13.33px;">Basic Javascript</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML-CSS/" style="font-size: 13.33px;">HTML, CSS</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/OOP/" style="font-size: 10px;">OOP</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/call-by-reference/" style="font-size: 10px;">call by reference</a> <a href="/tags/call-by-value/" style="font-size: 10px;">call by value</a> <a href="/tags/computer-science/" style="font-size: 20px;">computer science</a> <a href="/tags/computer-science-basic/" style="font-size: 20px;">computer science basic</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/linear-search/" style="font-size: 10px;">linear search</a> <a href="/tags/memory-hierarchy/" style="font-size: 10px;">memory hierarchy</a> <a href="/tags/python/" style="font-size: 16.67px;">python</a> <a href="/tags/python-basic/" style="font-size: 16.67px;">python basic</a> <a href="/tags/team-project/" style="font-size: 10px;">team project</a>
     </div>
 </div>
 
@@ -565,6 +492,44 @@ var data
         
         <article class="media">
             
+            <a href="/2019/04/29/Javascript1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Javascript1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-29T09:08:55.000Z">2019-04-29</time></div>
+                    <a href="/2019/04/29/Javascript1/" class="has-link-black-ter is-size-6">Javascript1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/JavaScript/">JavaScript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/04/26/Computer-Science-beginner7/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science-beginner7">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-26T01:35:33.000Z">2019-04-26</time></div>
+                    <a href="/2019/04/26/Computer-Science-beginner7/" class="has-link-black-ter is-size-6">Computer Science-beginner7</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/25/Computer-Science-beginner6/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner6">
@@ -576,7 +541,7 @@ var data
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-25T01:06:17.000Z">2019-04-25</time></div>
                     <a href="/2019/04/25/Computer-Science-beginner6/" class="has-link-black-ter is-size-6">Computer Science beginner6</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
                     </p>
                 </div>
             </div>
@@ -620,44 +585,6 @@ var data
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/23/Computer-Science-beginner3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science - beginner3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T10:44:47.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Computer-Science-beginner3/" class="has-link-black-ter is-size-6">Computer Science - beginner3</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/04/23/Python-Basic5/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic5">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T09:17:58.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Python-Basic5/" class="has-link-black-ter is-size-6">Python Basic5</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -676,7 +603,7 @@ var data
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">14</span>
+                    <span class="level-item tag">16</span>
                 </span>
             </a>
         </li>
@@ -706,6 +633,13 @@ var data
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Basic-JavaScript/">
+                        <span class="tag">Basic JavaScript</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/Basic-Javascript/">
                         <span class="tag">Basic Javascript</span>
                         <span class="tag is-grey">2</span>
@@ -730,6 +664,13 @@ var data
                     <a class="tags has-addons" href="/tags/HTML-CSS/">
                         <span class="tag">HTML, CSS</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JavaScript/">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -764,14 +705,14 @@ var data
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science/">
                         <span class="tag">computer science</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science-basic/">
                         <span class="tag">computer science basic</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
@@ -842,6 +783,44 @@ var data
         
         <article class="media">
             
+            <a href="/2019/04/29/Javascript1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Javascript1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-29T09:08:55.000Z">2019-04-29</time></div>
+                    <a href="/2019/04/29/Javascript1/" class="has-link-black-ter is-size-6">Javascript1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/JavaScript/">JavaScript</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/04/26/Computer-Science-beginner7/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science-beginner7">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-26T01:35:33.000Z">2019-04-26</time></div>
+                    <a href="/2019/04/26/Computer-Science-beginner7/" class="has-link-black-ter is-size-6">Computer Science-beginner7</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/25/Computer-Science-beginner6/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science beginner6">
@@ -853,7 +832,7 @@ var data
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-25T01:06:17.000Z">2019-04-25</time></div>
                     <a href="/2019/04/25/Computer-Science-beginner6/" class="has-link-black-ter is-size-6">Computer Science beginner6</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
                     </p>
                 </div>
             </div>
@@ -897,44 +876,6 @@ var data
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/23/Computer-Science-beginner3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Computer Science - beginner3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T10:44:47.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Computer-Science-beginner3/" class="has-link-black-ter is-size-6">Computer Science - beginner3</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Computer-Science/">Computer Science</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/04/23/Python-Basic5/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Python Basic5">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T09:17:58.000Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/Python-Basic5/" class="has-link-black-ter is-size-6">Python Basic5</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/My-Coding-Life/">My Coding Life</a> / <a class="has-link-grey -link" href="/categories/My-Coding-Life/Python/">Python</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -953,7 +894,7 @@ var data
                     <span class="level-item">April 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">14</span>
+                    <span class="level-item tag">16</span>
                 </span>
             </a>
         </li>
@@ -983,6 +924,13 @@ var data
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Basic-JavaScript/">
+                        <span class="tag">Basic JavaScript</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/Basic-Javascript/">
                         <span class="tag">Basic Javascript</span>
                         <span class="tag is-grey">2</span>
@@ -1007,6 +955,13 @@ var data
                     <a class="tags has-addons" href="/tags/HTML-CSS/">
                         <span class="tag">HTML, CSS</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JavaScript/">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -1041,14 +996,14 @@ var data
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science/">
                         <span class="tag">computer science</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/computer-science-basic/">
                         <span class="tag">computer science basic</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
